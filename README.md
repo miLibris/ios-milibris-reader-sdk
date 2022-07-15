@@ -14,6 +14,19 @@ Every app using the SDK must be configured with a licence key provided by miLibr
 - Add a new key named *MiLibrisReaderSDKLicenceKey* of type *String*.
 - In the value field, add the licence key provided by miLibris.
 
+### Installation via Swift Package Manager
+
+- In your Xcode project, select *File* > *Swift Packages* > *Add Package Dependency...*
+- In the URL field, paste *https://github.com/miLibris/ios-milibris-reader-sdk.git* and select *Next*
+- Select an update rule
+- Add the product "MiLibrisReaderSDK" to your app target
+
+#### Sample app
+
+An example of an Xcode project with Swift Package Manager integration is available in this repository. To use it:
+
+- Open *sample_swiftpackagemanager/MiLibrisReaderSDKSample.xcodeproj*
+
 ### Manual installation
 
 - Download and unzip the SDK from the latest release: https://github.com/miLibris/ios-milibris-reader-sdk/releases/latest
