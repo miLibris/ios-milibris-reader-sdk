@@ -16,15 +16,20 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Get the local URL of the .complete file
+        // It is usually downloaded from the miLibris platform
+        // In this sample, it is included in the app bundle
         guard let archivePath = Bundle.main.url(forResource: "sample", withExtension: "complete") else {
             fatalError("sample.complete not found in bundle")
         }
-        try? FileManager.default.removeItem(at: releasePath)
 
         // Unpack .complete
+        // This operation can be performed after downloading the .complete
+        try? FileManager.default.removeItem(at: releasePath)
         do {
             try MLArchive.extract(archivePath, inDirectory: releasePath)
         } catch {
+            // This error should be handled by the app: corrupted file, not enough space left on storage, etc.
             print("Error unpacking archive: \(error)")
         }
 
@@ -35,8 +40,35 @@ final class ViewController: UIViewController {
     @IBAction private func openReader() {
         print("Open reader")
 
+        // Instantiate a miLibris datasource for your release
         let datasource = XmlpdfDatasource(releasePath: releasePath, articlesLanguageCode: .frFR)
-        let reader = Reader(datasource: datasource, delegate: self)
+
+        // Instantiate the reader
+        let reader = Reader(datasource: datasource)
+
+        // Register a delegate (optional). It can be used to:
+        // - Improve the reader experience (imageViewForReaderPresentation...)
+        // - Track events in the reader to integrate with your Analytics solution
+        reader.delegate = self
+
+        // Add your branding to the reader (optional)
+        /*reader.config.applyBranding(
+            mainTintColor: <#T##UIColor#>, mainTintColorComplement: <#T##UIColor#>, logoImage: <#T##UIImage?#>, logoBackgroundColor: <#T##UIColor?#>
+        )*/
+
+        // Customize the reader (optional)
+        //reader.config.articleReader.features.isTextToSpeechEnabled = false
+
+        // Integrate with your article bookmarking system (optional)
+        reader.bookmarkProvider = MyBookmarkProvider()
+
+        // Add article sharing if you have a miLibris web kiosk with the sharing option enabled (optional)
+        reader.sharingProvider = MySharingProvider(
+            kioskBaseURL: URL(string: "https://www.mywebkiosk.com")!,
+            issueId: "milibris-issue-id" // the MID of the issue being opened, as returned by the miLibris API
+        )
+
+        // Present it
         reader.presentReaderViewController(from: self)
     }
 
