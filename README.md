@@ -27,6 +27,21 @@ An example of an Xcode project with Swift Package Manager integration is availab
 
 - Open *sample_swiftpackagemanager/MiLibrisReaderSDKSample.xcodeproj*
 
+### Installation via Carthage (requires Carthage >= 0.38.0)
+
+- Add the following line in your *Cartfile*:
+
+`binary "https://raw.githubusercontent.com/miLibris/ios-milibris-reader-sdk/main/MiLibrisReaderSDK.json" ~> 0.0`
+
+- In the project directory, run `carthage update --use-xcframeworks`
+
+#### Sample app
+
+An example of an Xcode project with Carthage integration is available in this repository. To use it:
+
+- In the *sample_carthage* directory, run `carthage update --use-xcframeworks`
+- Open *sample_carthage/MiLibrisReaderSDKSample.xcodeproj*
+
 ### Manual installation
 
 - Download and unzip the SDK from the latest release: https://github.com/miLibris/ios-milibris-reader-sdk/releases/latest
