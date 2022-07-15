@@ -27,6 +27,21 @@ An example of an Xcode project with Swift Package Manager integration is availab
 
 - Open *sample_swiftpackagemanager/MiLibrisReaderSDKSample.xcodeproj*
 
+### Installation via CocoaPods (requires CocoaPods >= 1.9)
+
+- Add the following line in your *Podfile*:
+
+`pod 'MiLibrisReaderSDK', '~> 0.0'`
+
+- Run `pod install`
+
+#### Sample app
+
+An example of an Xcode project with CocoaPods integration is available in this repository. To use it:
+
+- In the *sample_cocoapods* directory, run `pod install`
+- Open *sample_cocoapods/MiLibrisReaderSDKSample.xcworkspace*
+
 ### Installation via Carthage (requires Carthage >= 0.38.0)
 
 - Add the following line in your *Cartfile*:

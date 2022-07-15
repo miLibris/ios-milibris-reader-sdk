@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		095DC95AFEEF3255F8E6CE97 /* sample.complete in Resources */ = {isa = PBXBuildFile; fileRef = 98FDC1DD34654D8B387ED220 /* sample.complete */; };
+		1131CB8EAC1B0B1CB648E532 /* MyBookmarkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B95539A1732310C6116491 /* MyBookmarkProvider.swift */; };
+		4065D29E72FDBBF133B76920 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F52B185CA9960C482FE29 /* AppDelegate.swift */; };
+		4A62DDC39CC9EA288586A24E /* libPods-MiLibrisReaderSDKSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D136A279724BD25AD5BCA000 /* libPods-MiLibrisReaderSDKSample.a */; };
+		5A30082133D0535F769F9912 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95C62B767E4544885C0BB6F /* ViewController.swift */; };
+		858219BA00BF3DDA796B122D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5BA35647F16DB9BF7220FBF /* LaunchScreen.storyboard */; };
+		B776CB8C7AAF6A5C0985BD23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E83606E3995C526A2B5284 /* Main.storyboard */; };
+		DFEC9690E172C247D674CFED /* MySharingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1770D4EB3FD4276E103C00 /* MySharingProvider.swift */; };
+		FB2D91F851D5B6E3C0EA9C24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57E8502BB1FCA8EF9EE72E47 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26E6C8FD7FE9AB400BFEC994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4B7F52B185CA9960C482FE29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		57E8502BB1FCA8EF9EE72E47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62B95539A1732310C6116491 /* MyBookmarkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookmarkProvider.swift; sourceTree = "<group>"; };
+		69DDD3D3D840B5CD214DC46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		73CC2B4428128F1CAACFA87D /* Pods-MiLibrisReaderSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiLibrisReaderSDKSample.debug.xcconfig"; path = "Target Support Files/Pods-MiLibrisReaderSDKSample/Pods-MiLibrisReaderSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
+		7B1770D4EB3FD4276E103C00 /* MySharingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySharingProvider.swift; sourceTree = "<group>"; };
+		82BD7472B0E9514B8B90947A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		98FDC1DD34654D8B387ED220 /* sample.complete */ = {isa = PBXFileReference; path = sample.complete; sourceTree = "<group>"; };
+		B1E83606E3995C526A2B5284 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B95C62B767E4544885C0BB6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D136A279724BD25AD5BCA000 /* libPods-MiLibrisReaderSDKSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MiLibrisReaderSDKSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3C55E8298C934BD225FEB8D /* Pods-MiLibrisReaderSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiLibrisReaderSDKSample.release.xcconfig"; path = "Target Support Files/Pods-MiLibrisReaderSDKSample/Pods-MiLibrisReaderSDKSample.release.xcconfig"; sourceTree = "<group>"; };
+		F174B7D4BFCCF68D8773E3BC /* MiLibrisReaderSDKSample.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MiLibrisReaderSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		977F83BEEAF6B68CFFE672C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A62DDC39CC9EA288586A24E /* libPods-MiLibrisReaderSDKSample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		042C1EE35F508B34079758C4 = {
+			isa = PBXGroup;
+			children = (
+				2FEE1B1EABFD377EE7DF21D4 /* MiLibrisReaderSDKSample */,
+				14BE55C48E0192BA8F8BB848 /* Products */,
+				ED7230A803C4D9141637204E /* Pods */,
+				88B0601B8D75DBD01D2F8F5C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		14BE55C48E0192BA8F8BB848 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F174B7D4BFCCF68D8773E3BC /* MiLibrisReaderSDKSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FEE1B1EABFD377EE7DF21D4 /* MiLibrisReaderSDKSample */ = {
+			isa = PBXGroup;
+			children = (
+				4B7F52B185CA9960C482FE29 /* AppDelegate.swift */,
+				57E8502BB1FCA8EF9EE72E47 /* Assets.xcassets */,
+				26E6C8FD7FE9AB400BFEC994 /* Info.plist */,
+				C5BA35647F16DB9BF7220FBF /* LaunchScreen.storyboard */,
+				B1E83606E3995C526A2B5284 /* Main.storyboard */,
+				62B95539A1732310C6116491 /* MyBookmarkProvider.swift */,
+				7B1770D4EB3FD4276E103C00 /* MySharingProvider.swift */,
+				B95C62B767E4544885C0BB6F /* ViewController.swift */,
+				D2BD9DA673035A0572B3EFF6 /* Resources */,
+			);
+			name = MiLibrisReaderSDKSample;
+			path = ../MiLibrisReaderSDKSample;
+			sourceTree = "<group>";
+		};
+		88B0601B8D75DBD01D2F8F5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D136A279724BD25AD5BCA000 /* libPods-MiLibrisReaderSDKSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2BD9DA673035A0572B3EFF6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				98FDC1DD34654D8B387ED220 /* sample.complete */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED7230A803C4D9141637204E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73CC2B4428128F1CAACFA87D /* Pods-MiLibrisReaderSDKSample.debug.xcconfig */,
+				E3C55E8298C934BD225FEB8D /* Pods-MiLibrisReaderSDKSample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5C653826A58CC3419179E21 /* MiLibrisReaderSDKSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79664A1251B391355DE4EB6C /* Build configuration list for PBXNativeTarget "MiLibrisReaderSDKSample" */;
+			buildPhases = (
+				9376B83508289C803EE995CC /* [CP] Check Pods Manifest.lock */,
+				0274C25F58BB5ECB6F5D5AF5 /* Sources */,
+				775CFD73BDB9C6BB28B40519 /* Resources */,
+				977F83BEEAF6B68CFFE672C7 /* Frameworks */,
+				87C76D3AE626AAAE6D6F4182 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiLibrisReaderSDKSample;
+			productName = MiLibrisReaderSDKSample;
+			productReference = F174B7D4BFCCF68D8773E3BC /* MiLibrisReaderSDKSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87E555965165A161C9BDF692 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = D77A9FB374D67630548C2416 /* Build configuration list for PBXProject "MiLibrisReaderSDKSample" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				fr,
+			);
+			mainGroup = 042C1EE35F508B34079758C4;
+			productRefGroup = 14BE55C48E0192BA8F8BB848 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5C653826A58CC3419179E21 /* MiLibrisReaderSDKSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		775CFD73BDB9C6BB28B40519 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB2D91F851D5B6E3C0EA9C24 /* Assets.xcassets in Resources */,
+				858219BA00BF3DDA796B122D /* LaunchScreen.storyboard in Resources */,
+				B776CB8C7AAF6A5C0985BD23 /* Main.storyboard in Resources */,
+				095DC95AFEEF3255F8E6CE97 /* sample.complete in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87C76D3AE626AAAE6D6F4182 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiLibrisReaderSDKSample/Pods-MiLibrisReaderSDKSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiLibrisReaderSDKSample/Pods-MiLibrisReaderSDKSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MiLibrisReaderSDKSample/Pods-MiLibrisReaderSDKSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9376B83508289C803EE995CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiLibrisReaderSDKSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0274C25F58BB5ECB6F5D5AF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4065D29E72FDBBF133B76920 /* AppDelegate.swift in Sources */,
+				1131CB8EAC1B0B1CB648E532 /* MyBookmarkProvider.swift in Sources */,
+				DFEC9690E172C247D674CFED /* MySharingProvider.swift in Sources */,
+				5A30082133D0535F769F9912 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C5BA35647F16DB9BF7220FBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69DDD3D3D840B5CD214DC46B /* Base */,
+				82BD7472B0E9514B8B90947A /* fr */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26145786978B13CE57418AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3639831E18EF6105E5D9F7BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73CC2B4428128F1CAACFA87D /* Pods-MiLibrisReaderSDKSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ../MiLibrisReaderSDKSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.milibris.MiLibrisReaderSDKSample;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D799738B2D3C75597A266552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F86F6C138753A482E7D2203D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3C55E8298C934BD225FEB8D /* Pods-MiLibrisReaderSDKSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ../MiLibrisReaderSDKSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.milibris.MiLibrisReaderSDKSample;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79664A1251B391355DE4EB6C /* Build configuration list for PBXNativeTarget "MiLibrisReaderSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3639831E18EF6105E5D9F7BD /* Debug */,
+				F86F6C138753A482E7D2203D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D77A9FB374D67630548C2416 /* Build configuration list for PBXProject "MiLibrisReaderSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26145786978B13CE57418AAD /* Debug */,
+				D799738B2D3C75597A266552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87E555965165A161C9BDF692 /* Project object */;
+}
