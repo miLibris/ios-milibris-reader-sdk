@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OneReaderSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lWg-oO-4zK">
+                                <rect key="frame" x="15" y="175.5" width="345" height="316"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover" translatesAutoresizingMaskIntoConstraints="NO" id="ult-AH-bhB">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="256"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="256" id="hAG-SN-v5r"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5oG-eB-wMT">
+                                        <rect key="frame" x="127.5" y="286" width="90" height="30"/>
+                                        <state key="normal" title="Open Reader"/>
+                                        <connections>
+                                            <action selector="openReader" destination="BYZ-38-t0r" eventType="touchUpInside" id="LP1-sv-0vd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ult-AH-bhB" firstAttribute="leading" secondItem="lWg-oO-4zK" secondAttribute="leading" id="9b4-ol-Mzz"/>
+                                    <constraint firstAttribute="bottom" secondItem="5oG-eB-wMT" secondAttribute="bottom" id="ADS-lz-V7j"/>
+                                    <constraint firstItem="ult-AH-bhB" firstAttribute="top" secondItem="lWg-oO-4zK" secondAttribute="top" id="ICm-fb-mbT"/>
+                                    <constraint firstItem="5oG-eB-wMT" firstAttribute="top" secondItem="ult-AH-bhB" secondAttribute="bottom" constant="30" id="JIl-wu-vuY"/>
+                                    <constraint firstItem="ult-AH-bhB" firstAttribute="centerX" secondItem="lWg-oO-4zK" secondAttribute="centerX" id="SH8-Ce-LsZ"/>
+                                    <constraint firstItem="5oG-eB-wMT" firstAttribute="centerX" secondItem="lWg-oO-4zK" secondAttribute="centerX" id="uMa-GL-17P"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lWg-oO-4zK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="BDo-7E-SuX"/>
+                            <constraint firstItem="lWg-oO-4zK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CQd-O9-7f1"/>
+                            <constraint firstItem="lWg-oO-4zK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cNX-yO-qz4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coverImageView" destination="ult-AH-bhB" id="sx0-lh-nPl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cover" width="362" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
