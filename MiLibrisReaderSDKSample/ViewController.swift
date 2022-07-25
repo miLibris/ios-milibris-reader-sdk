@@ -33,9 +33,14 @@ final class ViewController: UIViewController {
             print("Error unpacking archive: \(error)")
         }
 
+        // Customize logging (optional)
+        //Logger.minLogLevel = .debug
+        //Logger.shared = MyLogger.self
     }
 
     @IBOutlet private weak var coverImageView: UIImageView?
+
+    private var lastSelectedPage: Int?
 
     @IBAction private func openReader() {
         print("Open reader")
@@ -46,6 +51,9 @@ final class ViewController: UIViewController {
         // Instantiate the reader
         let reader = Reader(datasource: datasource)
 
+        // Open the reader to a specific page (optional)
+        reader.initialPageNumber = lastSelectedPage ?? 1
+
         // Register a delegate (optional). It can be used to:
         // - Improve the reader experience (imageViewForReaderPresentation...)
         // - Track events in the reader to integrate with your Analytics solution
@@ -53,7 +61,10 @@ final class ViewController: UIViewController {
 
         // Add your branding to the reader (optional)
         /*reader.config.applyBranding(
-            mainTintColor: <#T##UIColor#>, mainTintColorComplement: <#T##UIColor#>, logoImage: <#T##UIImage?#>, logoBackgroundColor: <#T##UIColor?#>
+            mainTintColor: .red,
+            mainTintColorComplement: .white,
+            logoImage: UIImage(named: "myLogo"),
+            logoBackgroundColor: .white
         )*/
 
         // Customize the reader (optional)
@@ -62,11 +73,12 @@ final class ViewController: UIViewController {
         // Integrate with your article bookmarking system (optional)
         reader.bookmarkProvider = MyBookmarkProvider()
 
-        // Add article sharing if you have a miLibris web kiosk with the sharing option enabled (optional)
-        reader.sharingProvider = MySharingProvider(
-            kioskBaseURL: URL(string: "https://www.mywebkiosk.com")!,
-            issueId: "milibris-issue-id" // the MID of the issue being opened, as returned by the miLibris API
-        )
+        // Add article sharing to your website... (optional)
+        reader.sharingProvider = MyWebsiteSharingProvider()
+
+        // ... or add article sharing to a miLibris kiosk with the sharing option enabled (optional)
+        let issueId = "milibris-issue-id" // the MID of the issue being opened, as returned by the miLibris API
+        reader.sharingProvider = MyMiLibrisSharingProvider(issueId: issueId)
 
         // Present it
         reader.presentReaderViewController(from: self)
@@ -76,28 +88,39 @@ final class ViewController: UIViewController {
 
 extension ViewController: ReaderDelegate {
 
+    var imageViewForReaderPresentation: UIImageView? {
+        // Provide an image view that is displaying the cover of the issue.
+        // It will be used for open and close transitions.
+        // If you return nil, a default cover transition will be used.
+        return coverImageView
+    }
+
+    func readerViewController(_ readerViewController: UIViewController, didMoveToPageNumbers pageNumbers: [Int]) {
+        print("Did move to page numbers \(pageNumbers)")
+        lastSelectedPage = pageNumbers.first
+    }
+
+    func articleReaderViewController(
+        _ articleReaderViewController: UIViewController, didOpenArticle article: ArticlePreview
+    ) {
+        print("Did open article \(article.articleId): \(article.title)")
+    }
+
     func didPresentReaderViewController(_ readerViewController: UIViewController) {
         print("Did open reader")
     }
 
     func didDismissReaderViewController(_ readerViewController: UIViewController) {
         print("Did close reader")
+        // Here you can persist lastSelectedPage for later use
     }
 
     func readerViewController(_ readerViewController: UIViewController, willShowProduct product: Product) {
         print("Will show product: \(product)")
     }
 
-    func readerViewController(_ readerViewController: UIViewController, didMoveToPageNumbers pageNumbers: [Int]) {
-        print("Did move to page numbers \(pageNumbers)")
-    }
-
     func readerViewControllerDidReachLastPage(_ readerViewController: UIViewController) {
         print("Did move to last page")
-    }
-
-    var imageViewForReaderPresentation: UIImageView? {
-        return coverImageView
     }
 
     func readerViewControllerDidPresentSummary(_ readerViewController: UIViewController) {
@@ -106,12 +129,6 @@ extension ViewController: ReaderDelegate {
 
     func readerViewControllerDidPresentMiniSummary(_ readerViewController: UIViewController) {
         print("Did present mini summmary")
-    }
-
-    func articleReaderViewController(
-        _ articleReaderViewController: UIViewController, didOpenArticle article: ArticlePreview
-    ) {
-        print("Did open article \(article.title)")
     }
 
     func articleReaderViewController(
@@ -164,6 +181,20 @@ extension ViewController: ReaderDelegate {
         _ readerViewController: UIViewController, didOpenHtmlBoxWithAsset asset: HtmlBoxAsset
     ) {
         print("Did open HTML box: \(asset)")
+    }
+
+    func readerViewController(
+        _ readerViewController: UIViewController & ArticleReaderDelegate,
+        shouldDisplayArticle article: ArticlePreview
+    ) -> Bool {
+        return true
+
+        // From here you could present your own article reader
+        /*let myArticleViewController = MyArticleViewController()
+        myArticleViewController.article = article
+        myArticleViewController.delegate = readerViewController
+        readerViewController.present(myArticleViewController, animated: true)
+        return false*/
     }
 
 }

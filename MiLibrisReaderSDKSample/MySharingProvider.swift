@@ -8,13 +8,24 @@
 import MiLibrisReaderSDK
 import UIKit
 
-final class MySharingProvider: MiLibrisWebKioskSharingProvider {
+class MyWebsiteSharingProvider: SharingProvider {
 
-    let kioskBaseURL: URL
+    func articleSharingURL(article: ArticlePreview) throws -> URL {
+        // You could use the miLibris article identifier or the article title to match with articles on your website
+        return URL(string: "https://www.mywebsite.com/article/\(article.articleId)")!
+    }
+
+}
+
+class MyMiLibrisSharingProvider: MiLibrisWebKioskSharingProvider {
+
+    var kioskBaseURL: URL {
+        return URL(string: "https://www.mywebkiosk.com")!
+    }
+
     let issueId: String
 
-    init(kioskBaseURL: URL, issueId: String) {
-        self.kioskBaseURL = kioskBaseURL
+    init(issueId: String) {
         self.issueId = issueId
     }
 

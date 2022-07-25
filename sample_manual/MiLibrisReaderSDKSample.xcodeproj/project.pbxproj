@@ -3,13 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		095DC95AFEEF3255F8E6CE97 /* sample.complete in Resources */ = {isa = PBXBuildFile; fileRef = 98FDC1DD34654D8B387ED220 /* sample.complete */; };
 		1131CB8EAC1B0B1CB648E532 /* MyBookmarkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B95539A1732310C6116491 /* MyBookmarkProvider.swift */; };
 		4065D29E72FDBBF133B76920 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F52B185CA9960C482FE29 /* AppDelegate.swift */; };
+		5502D7CF2892866800FFD5A8 /* MyLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502D7CE2892866800FFD5A8 /* MyLogger.swift */; };
+		5502D7D92892908700FFD5A8 /* MyArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502D7D82892908700FFD5A8 /* MyArticleViewController.swift */; };
 		591C7E18D625465EF8C85505 /* MiLibrisReaderSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1D3517301474200F9BC974C /* MiLibrisReaderSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5A30082133D0535F769F9912 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95C62B767E4544885C0BB6F /* ViewController.swift */; };
 		858219BA00BF3DDA796B122D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5BA35647F16DB9BF7220FBF /* LaunchScreen.storyboard */; };
@@ -36,12 +38,14 @@
 /* Begin PBXFileReference section */
 		26E6C8FD7FE9AB400BFEC994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4B7F52B185CA9960C482FE29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5502D7CE2892866800FFD5A8 /* MyLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLogger.swift; sourceTree = "<group>"; };
+		5502D7D82892908700FFD5A8 /* MyArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyArticleViewController.swift; sourceTree = "<group>"; };
 		57E8502BB1FCA8EF9EE72E47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62B95539A1732310C6116491 /* MyBookmarkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookmarkProvider.swift; sourceTree = "<group>"; };
 		69DDD3D3D840B5CD214DC46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B1770D4EB3FD4276E103C00 /* MySharingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySharingProvider.swift; sourceTree = "<group>"; };
 		82BD7472B0E9514B8B90947A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		98FDC1DD34654D8B387ED220 /* sample.complete */ = {isa = PBXFileReference; path = sample.complete; sourceTree = "<group>"; };
+		98FDC1DD34654D8B387ED220 /* sample.complete */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.complete; sourceTree = "<group>"; };
 		B1E83606E3995C526A2B5284 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B95C62B767E4544885C0BB6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D1D3517301474200F9BC974C /* MiLibrisReaderSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MiLibrisReaderSDK.xcframework; sourceTree = "<group>"; };
@@ -85,7 +89,9 @@
 				26E6C8FD7FE9AB400BFEC994 /* Info.plist */,
 				C5BA35647F16DB9BF7220FBF /* LaunchScreen.storyboard */,
 				B1E83606E3995C526A2B5284 /* Main.storyboard */,
+				5502D7D82892908700FFD5A8 /* MyArticleViewController.swift */,
 				62B95539A1732310C6116491 /* MyBookmarkProvider.swift */,
+				5502D7CE2892866800FFD5A8 /* MyLogger.swift */,
 				7B1770D4EB3FD4276E103C00 /* MySharingProvider.swift */,
 				B95C62B767E4544885C0BB6F /* ViewController.swift */,
 				D2BD9DA673035A0572B3EFF6 /* Resources */,
@@ -138,8 +144,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1340;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = D77A9FB374D67630548C2416 /* Build configuration list for PBXProject "MiLibrisReaderSDKSample" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -179,7 +183,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4065D29E72FDBBF133B76920 /* AppDelegate.swift in Sources */,
+				5502D7D92892908700FFD5A8 /* MyArticleViewController.swift in Sources */,
 				1131CB8EAC1B0B1CB648E532 /* MyBookmarkProvider.swift in Sources */,
+				5502D7CF2892866800FFD5A8 /* MyLogger.swift in Sources */,
 				DFEC9690E172C247D674CFED /* MySharingProvider.swift in Sources */,
 				5A30082133D0535F769F9912 /* ViewController.swift in Sources */,
 			);

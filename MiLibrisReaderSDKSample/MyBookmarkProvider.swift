@@ -35,6 +35,8 @@ final class MyBookmarkProvider: BookmarkProvider {
             bookmarkedArticlesIds.remove(article.articleId)
             print("Removed article from bookmarks: \(article.title)")
         }
+
+        // Return true if the operation was successful, false otherwise.
         return true
     }
 
