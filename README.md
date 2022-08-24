@@ -113,9 +113,8 @@ An example of an Xcode project with manual integration is available in this repo
     - Manual installation: delete *MLPDFReaderSDK.xcframework* from your project directory, then remove references to the framework in your Xcode project
 
 - Follow the instructions in the previous sections to install the new SDK.
-- In your Swift code, replace `import MLPDFReaderSDK` with `import MiLibrisReaderSDK`
+- In your Swift code, replace `import MLPDFReaderSDK` with `import MiLibrisReaderSDK`.
 - Follow the instructions in the next sections to migrate your code to use the new SDK.
-- TODO: stub old public interface in SDK with useful warnings and errors to guide the migration
 
 ## Implementation
 
