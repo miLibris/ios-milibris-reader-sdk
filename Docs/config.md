@@ -2,6 +2,7 @@
 
 * [AlertConfig](#alertconfig)
 * [ArticleImageConfig](#articleimageconfig)
+* [ArticleSettingsConfig](#articlesettingsconfig)
 * [HtmlBoxConfig](#htmlboxconfig)
 * [ModalConfig](#modalconfig)
 * [NavigationBarConfig](#navigationbarconfig)
@@ -41,6 +42,39 @@ The config for an instance of the article image viewer.
 | 1 | colors.background | UIColor | light: #F1F1F1 / dark: #1F1F1F | The background color. |
 | 2 | colors.buttonTint | UIColor | light: #15202B / dark: #FFFFFF | The color applied to controls. |
 | 2 | images.close | UIImage? | icn-close | The image for the close button. |
+
+## ArticleSettingsConfig
+
+The config for an instance of the article settings.
+
+![articlesettings_1.png](./assets/articlesettings_1.png)
+
+| Badge | Name | Type | Default value | Description |
+| ----- | ---- | ---- | ------------- | ----------- |
+| 1 | colors.overlayBackground | UIColor | light: #000000 40% / dark: #606060 40% | The background color of the overlay when showing content over a screen. |
+| 2 | colors.background | UIColor | light: #FFFFFF / dark: #1F1F1F | The background color. |
+| 3 | colors.fontSizeDisabled | UIColor | light: #ECECEC / dark: #333333 | The color of the font size buttons when disabled. |
+| 3 | colors.fontSizeEnabled | UIColor | light: #86949B / dark: #606060 | The color of the font size buttons when enabled. |
+| 3 | colors.fontSizeImage | UIColor | light: #1E323D / dark: #FFFFFF | The color of the font size image. |
+| 3 | images.fontSizeA | UIImage? | fontSize_A | The image for the font size action (A). |
+| 3 | images.fontSizeMinus | UIImage? | fontSize_minus | The image for the font size action (minus). |
+| 3 | images.fontSizePlus | UIImage? | fontSize_plus | The image for the font size action (plus). |
+| 4 | colors.lineSpacingDisabled | UIColor | light: #ECECEC / dark: #333333 | The color of the line spacing buttons when disabled. |
+| 4 | colors.lineSpacingEnabled | UIColor | light: #1E323D / dark: #FFFFFF | The color of the line spacing buttons when enabled. |
+| 4 | images.lineSpacingLess | UIImage? | lineSpacing_less | The image for the line spacing action (less). |
+| 4 | images.lineSpacingMore | UIImage? | lineSpacing_more | The image for the line spacing action (more). |
+| 5 | colors.userInterfaceStyleBorder | UIColor | light: #ECECEC / dark: #333333 | The border color of the user interface style buttons when not selected. |
+| 5 | colors.userInterfaceStyleBorderSelected | UIColor | light: #536067 / dark: #606060 | The border color of the user interface style buttons when selected. |
+| 5 | images.userInterfaceStyleAuto | UIImage? | uistyle_auto | The image for the user interface style action (auto). |
+| 5 | images.userInterfaceStyleBorder | UIImage? | uistyle_border | The image for the user interface style action (border). |
+| 5 | images.userInterfaceStyleDark | UIImage? | uistyle_dark | The image for the user interface style action (dark). |
+| 5 | images.userInterfaceStyleLight | UIImage? | uistyle_light | The image for the user interface style action (light). |
+| 6 | colors.brightnessImages | UIColor | light: #1E323D / dark: #606060 | The color applied to images of the brightness control. |
+| 6 | colors.brightnessMin | UIColor | light: #536067 / dark: #606060 | The color applied to the minimum part of the brightness control. |
+| 6 | colors.brightnessMax | UIColor | light: #BEC2C5 / dark: #FFFFFF | The color applied to the maximum part of the brightness control. |
+| 6 | images.brightnessMin | UIImage? | brightness_min | The image for the brightness action (minimum). |
+| 6 | images.brightnessMax | UIImage? | brightness_max | The image for the brightness action (maximum). |
+| 7 | colors.separator | UIColor | light: #ECECEC / dark: #333333 | The separator color. |
 
 ## HtmlBoxConfig
 
