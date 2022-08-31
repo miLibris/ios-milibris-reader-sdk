@@ -2,6 +2,7 @@
 
 * [AlertConfig](#alertconfig)
 * [ArticleImageConfig](#articleimageconfig)
+* [ArticleReaderConfig](#articlereaderconfig)
 * [ArticleSettingsConfig](#articlesettingsconfig)
 * [HtmlBoxConfig](#htmlboxconfig)
 * [ModalConfig](#modalconfig)
@@ -42,6 +43,37 @@ The config for an instance of the article image viewer.
 | 1 | colors.background | UIColor | light: #F1F1F1 / dark: #1F1F1F | The background color. |
 | 2 | colors.buttonTint | UIColor | light: #15202B / dark: #FFFFFF | The color applied to controls. |
 | 2 | images.close | UIImage? | icn-close | The image for the close button. |
+
+## ArticleReaderConfig
+
+The config for an instance of the article reader.
+
+![articlereader_1.png](./assets/articlereader_1.png)
+
+| Badge | Name | Type | Default value | Description |
+| ----- | ---- | ---- | ------------- | ----------- |
+| 1 | navigationBar | [NavigationBarConfig](#navigationbarconfig) | | The config for the the article reader navigation bar. |
+| 1 | userInterface.statusBarStyle | UIStatusBarStyle | default | The style of the status bar. |
+| 2 | images.close | UIImage? | icn-close | The image for the close button in the navigation bar. |
+| 3 | summary | [SummaryConfig](#summaryConfig) | | The config for the the article reader summary. |
+| 3 | images.summary | UIImage? | icn-close | The image for the summary button in the navigation bar. |
+| 4 | colors.background | UIColor | light: #F9F9F9 / dark: #1F1F1F | The background color. |
+| 4 | userInterface.activityIndicatorStyle | UIActivityIndicatorView.Style | medium | The style of activity indicators. |
+| 4 | userInterface.scrollViewIndicatorStyle | UIScrollView.IndicatorStyle | default | The style of scroll bar indicators. |
+| 5 | articleImage | [ArticleImageConfig](#articleimageconfig) | | The config for the the article image viewer. |
+| 6 | colors.fisheyeLabelBackground | UIColor | #FFFFFF | The background color of the fisheye label. |
+| 6 | colors.fisheyeLabelText | UIColor | #15202B | The text color of the fisheye label. |
+| 6 | fonts.fisheyeLabel | FontInfo | System 12 | The font for the fisheye label. |
+| 7 | colors.bottomBarBackground | UIColor | light: #F9F9F9 35% / dark: #1F1F1F 35% | The background color of the bottom bar. |
+| 7 | colors.bottomBarTint | UIColor | light: #15202B / dark: #FFFFFF | The color applied to controls on the bottom bar. |
+| 7 | fonts.bottomBar | FontInfo | System 12 | The font for the bottom bar text. |
+| 7 | userInterface.bottomBarBackgroundStyle | BarBackgroundStyle | translucent | The background style of the bottom bar. |
+| 8 | features.isTextToSpeechEnabled | Bool | true | Enable text-to-speech feature in article reader. |
+| 8 | images.textToSpeechActivate | UIImage? | icn-close | The image for the activate text-to-speech button in the bottom bar. |
+| 8 | images.textToSpeechDeactivate | UIImage? | icn-close | The image for the deactivate text-to-speech button in the bottom bar. |
+| 9 | articleSettings | [ArticleSettingsConfig](#articlesettingsconfig) | | The config for the the article settings. |
+| 9 | images.settings | UIImage? | icn-close | The image for the settings button in the bottom bar. |
+| 10 | images.share | UIImage? | icn-close | The image for the share button in the bottom bar. |
 
 ## ArticleSettingsConfig
 
