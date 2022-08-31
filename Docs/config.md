@@ -1,9 +1,32 @@
 # Config reference
 
+* [AlertConfig](#alertconfig)
 * [HtmlBoxConfig](#htmlboxconfig)
 * [ModalConfig](#modalconfig)
 * [NavigationBarConfig](#navigationbarconfig)
 * [SlideshowBoxConfig](#slideshowboxconfig)
+
+## AlertConfig
+
+The config for an instance of an alert.
+
+![alert_1.png](./assets/alert_1.png)
+
+| Badge | Name | Type | Default value | Description |
+| ----- | ---- | ---- | ------------- | ----------- |
+| 1 | colors.overlayBackground | UIColor | #364146 70% | The color of the overlay background. |
+| 2 | colors.contentBackground | UIColor | #FFFFFF | The background color of the content. |
+| 3 | images.image | UIImage? | alert-image | The image displayed in the alert. |
+| 4 | colors.titleLabelText | UIColor | #1E323D | The text color of the title label. |
+| 4 | fonts.titleLabel | FontInfo | System 22 | The font of the title label. |
+| 5 | colors.messageLabelText | UIColor | #536067 | The text color of the message label. |
+| 5 | fonts.messageLabel | FontInfo | System 18 | The font of the message label. |
+| 6 | colors.primaryActionButtonBackground | UIColor | #27414E | The background color of the primary action button. |
+| 6 | colors.primaryActionButtonText | UIColor | #FFFFFF | The text color of the primary action button. |
+| 6 | fonts.primaryActionButton | FontInfo | System bold 14 | The font of the primary action button. |
+| 7 | colors.secondaryActionButtonBorder | UIColor | #ECECEC | The border color of the secondary action button. |
+| 7 | colors.secondaryActionButtonText | UIColor | #1E323D | The text color of the secondary action button. |
+| 7 | fonts.secondaryActionButton | FontInfo | System bold 14 | The font of the secondary action button. |
 
 ## HtmlBoxConfig
 
