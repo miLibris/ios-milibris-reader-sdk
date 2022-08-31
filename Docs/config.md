@@ -1,7 +1,19 @@
 # Config reference
 
+* [HtmlBoxConfig](#htmlboxconfig)
 * [NavigationBarConfig](#navigationbarconfig)
 * [SlideshowBoxConfig](#slideshowboxconfig)
+
+## HtmlBoxConfig
+
+The config for an instance of an HTML box.
+
+![htmlbox_1.png](./assets/htmlbox_1.png)
+
+| Badge | Name | Type | Default value | Description |
+| ----- | ---- | ---- | ------------- | ----------- |
+| 1 | colors.background | UIColor | light: #F1F1F1 / dark: #1F1F1F | The background color. |
+| 2 | userInterface.scrollViewIndicatorStyle | UIScrollView.IndicatorStyle | default | The style of scroll bar indicators. |
 
 ## NavigationBarConfig
 
