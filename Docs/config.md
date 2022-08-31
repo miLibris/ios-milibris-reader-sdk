@@ -5,6 +5,7 @@
 * [ModalConfig](#modalconfig)
 * [NavigationBarConfig](#navigationbarconfig)
 * [SlideshowBoxConfig](#slideshowboxconfig)
+* [SummaryConfig](#summaryconfig)
 
 ## AlertConfig
 
@@ -91,3 +92,36 @@ The config for an instance of an slideshow box.
 | 2 | fonts.caption | FontInfo | System 18 | The font of the caption. |
 | 3 | colors.currentPageIndicatorTint | UIColor | light: #15202B / dark: #FFFFFF | The color of the selected page indicator. |
 | 3 | colors.pageIndicatorTint | UIColor | light: #15202B 50% / dark: #FFFFFF 50% | The color of the page indicator. |
+
+## SummaryConfig
+
+The config for an instance of the summary.
+
+![summary_1.png](./assets/summary_1.png)
+![summary_2.png](./assets/summary_2.png)
+![summary_3.png](./assets/summary_3.png)
+
+| Badge | Name | Type | Default value | Description |
+| ----- | ---- | ---- | ------------- | ----------- |
+| 1 | images.close | UIImage? | icn-close | The image for the close button in the navigation bar. |
+| 2 | navigationBar | [NavigationBarConfig](#navigationbarconfig) | | The config for the the summary navigation bar. |
+| 3 | colors.rubricBackground | UIColor | light: #536067 / dark: #606060 | The background color of rubric views. |
+| 3 | colors.rubricText | UIColor | #FFFFFF | The text color of rubric views. |
+| 3 | fonts.rubric | FontInfo | System bold 12 | The font of rubric views. |
+| 4 | colors.cellTitleText | UIColor | light: #1E323D / dark: #FFFFFF | The color of the title in article cells. |
+| 4 | fonts.cellTitle | FontInfo | System bold 16 | The font of the title in article cells. |
+| 5 | colors.cellSubtitleText | UIColor | light: #86949B / dark: #BEC2C5 | The color of the subtitle in article cells. |
+| 5 | fonts.cellSubtitle | FontInfo | System 14 | The font of the subtitle in article cells. |
+| 6, 10, 11 | colors.cellFooterText | UIColor | light: #536067 / dark: #ECECEC | The color of footer text in article cells. |
+| 6 | fonts.cellFooter | FontInfo | System 12 | The font of footer text in article cells. |
+| 6 | images.readingTime | UIImage? | fi_watch | The image for reading time indicator in cells. |
+| 7 | userInterface.scrollViewIndicatorStyle | UIScrollView.IndicatorStyle | default | The style of scroll bar indicators. |
+| 8 | colors.background | UIColor | light: #FFFFFF / dark: #1F1F1F | The background color. |
+| 9 | colors.selectedBackground | UIColor? | nil | The background color of selected cells. Uses iOS default if nil. |
+| 10 | images.bookmarkOff | UIImage? | userAction_icn-save-off | The image for bookmark button in cells (OFF). |
+| 11 | images.bookmarkOn | UIImage? | userAction_icn-save-on | The image for bookmark button in cells (ON). |
+| 12 | colors.imagePlaceholder | UIColor | light: #F9F9F9 / dark: #536067 | The background color of image views when loading. |
+| 13 | colors.separator | UIColor | light: #ECECEC / dark: #333333 | The cell separator color. |
+| 14 | colors.overlayBackground | UIColor | light: #000000 40% / dark: #606060 40% | The background color of the overlay when showing content over a screen. |
+| 15 | colors.rubricPlaceholder | UIColor | light: #ECECEC / dark: #333333 | The text color of rubric views while loading. |
+| 16 | colors.cellPlaceholder | UIColor | light: #ECECEC / dark: #333333 | The color of the label placeholders while loading. |
