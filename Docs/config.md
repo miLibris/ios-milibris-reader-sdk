@@ -1,6 +1,7 @@
 # Config reference
 
 * [NavigationBarConfig](#navigationbarconfig)
+* [SlideshowBoxConfig](#slideshowboxconfig)
 
 ## NavigationBarConfig
 
@@ -23,3 +24,18 @@ The config for an instance of a navigation bar.
 | 7 | colors.logoBackground | UIColor? | #FFFFFF | The background color of the logo. |
 | 7 | colors.logoBorder | UIColor? | #ECECEC | The border color of the logo. |
 | 7 | images.logo | UIImage? | nil | The brand logo to display in the reader, if no one is provided by the datasource. |
+
+## SlideshowBoxConfig
+
+The config for an instance of an slideshow box.
+
+![slideshowbox_1.png](./assets/slideshowbox_1.png)
+
+| Badge | Name | Type | Default value | Description |
+| ----- | ---- | ---- | ------------- | ----------- |
+| 1 | colors.background | UIColor | light: #F1F1F1 / dark: #1F1F1F | The background color. |
+| 2 | colors.captionBackground | UIColor | light: #F1F1F1 50% / dark: #1F1F1F 50% | The background  color of the caption. |
+| 2 | colors.captionText | UIColor | light: #15202B / dark: #FFFFFF | The text color of the caption. |
+| 2 | fonts.caption | FontInfo | System 18 | The font of the caption. |
+| 3 | colors.currentPageIndicatorTint | UIColor | light: #15202B / dark: #FFFFFF | The color of the selected page indicator. |
+| 3 | colors.pageIndicatorTint | UIColor | light: #15202B 50% / dark: #FFFFFF 50% | The color of the page indicator. |
