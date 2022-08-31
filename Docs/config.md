@@ -1,6 +1,7 @@
 # Config reference
 
 * [HtmlBoxConfig](#htmlboxconfig)
+* [ModalConfig](#modalconfig)
 * [NavigationBarConfig](#navigationbarconfig)
 * [SlideshowBoxConfig](#slideshowboxconfig)
 
@@ -14,6 +15,22 @@ The config for an instance of an HTML box.
 | ----- | ---- | ---- | ------------- | ----------- |
 | 1 | colors.background | UIColor | light: #F1F1F1 / dark: #1F1F1F | The background color. |
 | 2 | userInterface.scrollViewIndicatorStyle | UIScrollView.IndicatorStyle | default | The style of scroll bar indicators. |
+
+## ModalConfig
+
+The config for an instance of a modal screen.
+
+![modal_1.png](./assets/modal_1.png)
+
+| Badge | Name | Type | Default value | Description |
+| ----- | ---- | ---- | ------------- | ----------- |
+| 1 | colors.navigationBarBackground | UIColor | light: #F9F9F9 35% / dark: #1F1F1F 35% | The background color of the navigation bar. |
+| 1 | userInterface.navigationBarBackgroundStyle | BarBackgroundStyle | translucent | The background style of the navigation bar. |
+| 2 | colors.navigationBarButtonsTint | UIColor | light: #15202B / dark: #FFFFFF | The color applied to navigation bar buttons. |
+| 2 | images.close | UIImage? | icn-close | The image for the close button in the navigation bar. |
+| 3 | colors.navigationBarTitleText | UIColor | light: #15202B / dark: #FFFFFF | The text color of the navigation bar title. |
+| 3 | fonts.navigationBarTitle | FontInfo | System bold 22 | The font of the navigation bar title. |
+| 4 | userInterface.statusBarStyle | UIStatusBarStyle | default | The style of the status bar. |
 
 ## NavigationBarConfig
 
