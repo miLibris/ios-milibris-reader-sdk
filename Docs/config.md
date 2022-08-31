@@ -1,6 +1,7 @@
 # Config reference
 
 * [AlertConfig](#alertconfig)
+* [ArticleImageConfig](#articleimageconfig)
 * [HtmlBoxConfig](#htmlboxconfig)
 * [ModalConfig](#modalconfig)
 * [NavigationBarConfig](#navigationbarconfig)
@@ -28,6 +29,18 @@ The config for an instance of an alert.
 | 7 | colors.secondaryActionButtonBorder | UIColor | #ECECEC | The border color of the secondary action button. |
 | 7 | colors.secondaryActionButtonText | UIColor | #1E323D | The text color of the secondary action button. |
 | 7 | fonts.secondaryActionButton | FontInfo | System bold 14 | The font of the secondary action button. |
+
+## ArticleImageConfig
+
+The config for an instance of the article image viewer.
+
+![articleimage_1.png](./assets/articleimage_1.png)
+
+| Badge | Name | Type | Default value | Description |
+| ----- | ---- | ---- | ------------- | ----------- |
+| 1 | colors.background | UIColor | light: #F1F1F1 / dark: #1F1F1F | The background color. |
+| 2 | colors.buttonTint | UIColor | light: #15202B / dark: #FFFFFF | The color applied to controls. |
+| 2 | images.close | UIImage? | icn-close | The image for the close button. |
 
 ## HtmlBoxConfig
 
