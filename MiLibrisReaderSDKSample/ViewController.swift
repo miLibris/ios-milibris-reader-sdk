@@ -68,7 +68,14 @@ final class ViewController: UIViewController {
         )*/
 
         // Customize the reader (optional)
-        //reader.config.articleReader.features.isTextToSpeechEnabled = false
+        reader.config.colors.background = .red
+        reader.config.articleReader.features.isTextToSpeechEnabled = false
+
+        // Apply the same changes to all navigation bars (optional)
+        reader.config.navigationBar.applyMyConfig()
+        reader.config.summary.navigationBar.applyMyConfig()
+        reader.config.articleReader.navigationBar.applyMyConfig()
+        reader.config.articleReader.summary.navigationBar.applyMyConfig()
 
         // Integrate with your article bookmarking system (optional)
         reader.bookmarkProvider = MyBookmarkProvider()
@@ -195,6 +202,15 @@ extension ViewController: ReaderDelegate {
         myArticleViewController.delegate = readerViewController
         readerViewController.present(myArticleViewController, animated: true)
         return false*/
+    }
+
+}
+
+extension NavigationBarConfig {
+
+    mutating func applyMyConfig() {
+        colors.titleText = .blue
+        fonts.title = .custom(UIFont(name: "myfont", size: 12))
     }
 
 }

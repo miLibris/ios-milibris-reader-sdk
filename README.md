@@ -266,6 +266,41 @@ class MyViewController: UIViewController {
 }
 ```
 
+You can also (or in addition to the previous method) individually customize every element of the UI. To do so, mutate the reader.config struct before opening the reader. The complete reference can be found in [Docs/config.md](./Docs/config.md#readerconfig). For example:
+
+```swift
+import MiLibrisReaderSDK
+
+class MyViewController: UIViewController {
+
+    func openReader() {
+        // [...]
+
+        // Set this before presenting the reader
+        reader.config.colors.background = .red
+        reader.config.articleReader.features.isTextToSpeechEnabled = false
+
+        // Apply the same changes to all navigation bars
+        reader.config.navigationBar.applyMyConfig()
+        reader.config.summary.navigationBar.applyMyConfig()
+        reader.config.articleReader.navigationBar.applyMyConfig()
+        reader.config.articleReader.summary.navigationBar.applyMyConfig()
+
+        // [...]
+    }
+
+}
+
+extension NavigationBarConfig {
+
+    mutating func applyMyConfig() {
+        colors.titleText = .blue
+        fonts.title = .custom(UIFont(name: "myfont", size: 12))
+    }
+
+}
+```
+
 ### Support dark mode
 
 If your application already supports dark mode, it will also be available in the reader.
