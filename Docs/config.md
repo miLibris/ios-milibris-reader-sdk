@@ -7,6 +7,7 @@
 * [HtmlBoxConfig](#htmlboxconfig)
 * [ModalConfig](#modalconfig)
 * [NavigationBarConfig](#navigationbarconfig)
+* [ReaderConfig](#readerconfig)
 * [SlideshowBoxConfig](#slideshowboxconfig)
 * [SummaryConfig](#summaryconfig)
 
@@ -156,6 +157,62 @@ The config for an instance of a navigation bar.
 | 7 | colors.logoBackground | UIColor? | #FFFFFF | The background color of the logo. |
 | 7 | colors.logoBorder | UIColor? | #ECECEC | The border color of the logo. |
 | 7 | images.logo | UIImage? | nil | The brand logo to display in the reader, if no one is provided by the datasource. |
+
+## ReaderConfig
+
+The config for an instance of the reader.
+
+![reader_1.png](./assets/reader_1.png)
+![reader_2.png](./assets/reader_2.png)
+![reader_3.png](./assets/reader_3.png)
+
+| Badge | Name | Type | Default value | Description |
+| ----- | ---- | ---- | ------------- | ----------- |
+| 1 | alert | AlertConfig | | The config for alerts displayed by the reader. |
+| 1 | htmlBox | [HtmlBoxConfig](#htmlboxconfig) | | The config for an instance of an HTML box. |
+| 1 | modal | [ModalConfig](#modalconfig) | | The config for the reader modals. |
+| 1 | slideshowBox | [SlideshowBoxConfig](#slideshowboxconfig) | | The config for an instance of a slideshow box. |
+| 1 | features.debugBoxes | Bool | false | Display boxes position with a transparent overlay. |
+| 1 | features.isDoublePagesEnabled | Bool | true | If false, always display single pages, even in landscape. |
+| 1 | features.longPressArticlesEnabled | Bool | true | Enable the long press gesture to open articles. |
+| 1 | features.paddingForZoomingOnBoxes | CGFloat | 5 | The padding to apply when zooming on boxes. |
+| 1 | userInterface.supportedInterfaceOrientations | UIInterfaceOrientationMask | icn-arrow-up | The interface orientations supported by the reader. |
+| 1 | colors.boxHighlight | UIColor | #BEC2C5 25% | The color used to highlight boxes on page turn. |
+| 1 | colors.pagePlaceholder | UIColor | light: #F9F9F9 / dark: #536067 35% | The background color of pages when loading. |
+| 1 | userInterface.activityIndicatorStyle | UIActivityIndicatorView.Style | icn-arrow-up | The style of activity indicators. |
+| 2 | colors.articleCapsuleHiddenBackground | UIColor | light: #F1F1F1 / dark: #1F1F1F | The background color of the article capsule when the bottom sheet is in the "hidden" position. |
+| 2 | colors.articleCapsuleHiddenText | UIColor | light: #536067 / dark: #B4B4B4 | The text color of the article capsule when the bottom sheet is in the "hidden" position. |
+| 2 | colors.noArticlesBackground | UIColor | light: #F1F1F1 / dark: #1F1F1F | The background color of the "no articles" view. |
+| 2 | colors.noArticlesText | UIColor | light: #536067 / dark: #B4B4B4 | The text color of the "no articles" view. |
+| 2 | fonts.articleCapsuleArticles | FontInfo | System bold 12 | The font of the article capsule in the "articles" state. |
+| 2 | fonts.articleCapsuleNoArticles | FontInfo | System 14 | The font  of the article capsule in the "no articles" state. |
+| 2 | images.articleCapsuleArrowUp | UIImage? | icn-arrow-up | The image for the arrow up indicator of the article capsule in the "articles" state. |
+| 3 | colors.background | UIColor | light: #F1F1F1 / dark: #1F1F1F | The background color. |
+| 4 | navigationBar | [NavigationBarConfig](#navigationbarconfig) | | The config for the reader navigation bar. |
+| 4 | userInterface.statusBarStyle | UIStatusBarStyle | icn-arrow-up | The style of the status bar. |
+| 5 | images.close | UIImage? | icn-close | The image for the close button in the navigation bar. |
+| 6 | summary | [SummaryConfig](#summaryconfig) | | The config for the reader summary. |
+| 6 | images.summary | UIImage? | icn-summary | The image for the summary button in the navigation bar. |
+| 7 | colors.articleCapsuleBottomBackground | UIColor | light: #536067 / dark: #B4B4B4 | The background color of the article capsule when the bottom sheet is in the "bottom" position. |
+| 7 | colors.articleCapsuleBottomText | UIColor | light: #F1F1F1 / dark: #F1F1F1 | The text color of the article capsule when the bottom sheet is in the "bottom" position. |
+| 8 | features.debugImageCrop | Bool | false | Display rectangles on images previewing image crop. |
+| 8 | colors.flatplanImagePlaceholder | UIColor | light: #EBEDED / dark: #313638 | The background color of flatplan images while they are loading. |
+| 8 | colors.flatplanSelectedBorder | UIColor | light: #536067 / dark: #B4B4B4 | The color of the border in the flatplan when selected. |
+| 8 | colors.flatplanSelectedTitleText | UIColor | light: #536067 / dark: #B4B4B4 | The color of the text in the flatplan when selected. |
+| 8 | colors.flatplanTitleText | UIColor | light: #15202B / dark: #FFFFFF | The color of the text in the flatplan when not selected. |
+| 8 | fonts.flatplanTitle | FontInfo | System 12 | The font of the text in the flatplan. |
+| 9 | colors.bottomSheetDragIndicator | UIColor | light: #86949B / dark: #BEC2C5 | The color of the bottom sheet drag indicator view. |
+| 10 | articleReader | [ArticleReaderConfig](#articlereaderconfig) | | The config for the article reader. |
+| 10 | features.onDeviceSmartCropEnabled | Bool | true | Enable on-device smart crop for images. |
+| 10 | colors.bottomSheetBackground | UIColor | light: #F9F9F9 35% / dark: #1F1F1F 35% | The background color of the bottom sheet. |
+| 10 | colors.miniSummaryCellPlaceholder | UIColor | light: #BEC2C5 45% / dark: #536067 45% | The color of the label placeholders in the mini-summary while loading. |
+| 10 | colors.miniSummaryCellTitleText | UIColor | light: #1E323D / dark: #FFFFFF | The color of the cell title in the mini-summary. |
+| 10 | colors.miniSummaryImagePlaceholder | UIColor | light: #EBEDED / dark: #313638 | The background color of mini-summary images while they are loading. |
+| 10 | colors.miniSummarySelectedBackground | UIColor? | nil | The selected background color of cells in the mini-summary. |
+| 10 | colors.miniSummarySeparator | UIColor? | nil | The separator color in the mini-summary. |
+| 10 | fonts.miniSummaryCellTitle | FontInfo | System bold 16 | The font of the cell title in the mini-summary. |
+| 10 | userInterface.bottomSheetBackgroundStyle | BarBackgroundStyle | icn-arrow-up | The background style of the bottom sheet. |
+| 10 | userInterface.scrollViewIndicatorStyle | UIScrollView.IndicatorStyle | icn-arrow-up | The style of scroll bar indicators. |
 
 ## SlideshowBoxConfig
 
