@@ -68,14 +68,14 @@ final class ViewController: UIViewController {
         )*/
 
         // Customize the reader (optional)
-        reader.config.colors.background = .red
-        reader.config.articleReader.features.isTextToSpeechEnabled = false
+        //reader.config.colors.background = .red
+        //reader.config.articleReader.features.isTextToSpeechEnabled = false
 
         // Apply the same changes to all navigation bars (optional)
-        reader.config.navigationBar.applyMyConfig()
-        reader.config.summary.navigationBar.applyMyConfig()
-        reader.config.articleReader.navigationBar.applyMyConfig()
-        reader.config.articleReader.summary.navigationBar.applyMyConfig()
+        //reader.config.navigationBar.applyMyConfig()
+        //reader.config.summary.navigationBar.applyMyConfig()
+        //reader.config.articleReader.navigationBar.applyMyConfig()
+        //reader.config.articleReader.summary.navigationBar.applyMyConfig()
 
         // Integrate with your article bookmarking system (optional)
         reader.bookmarkProvider = MyBookmarkProvider()
