@@ -1,5 +1,21 @@
 # MiLibrisReaderSDK iOS changelog
 
+### v0.3.0
+08/09/2022
+
+**Features**
+
+- [TC-4494] Add HTML enrichments
+- [TC-3570] Add delegate method to track HTML enrichments usage
+- [TC-4705] Add accessibility identifiers
+- [TC-4484] Add internal video enrichments
+- [TC-3566] Add delegate method to track video enrichments usage
+- [TC-4480] Add internal audio enrichments
+- [TC-4497] Add slideshow enrichments
+- [TC-4486] Add external video enrichments
+- [TC-4616] Add licence key check
+- [TC-4617] Prepare SDK for distribution
+
 ### v0.2.2
 13/07/2022
 
