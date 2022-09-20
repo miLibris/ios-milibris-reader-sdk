@@ -1,5 +1,12 @@
 # MiLibrisReaderSDK iOS changelog
 
+### v0.3.1
+20/09/2022
+
+**Improvements**
+
+- [TC-5282] Do not override box highlight color with customer branding, update default highlight color
+
 ### v0.3.0
 08/09/2022
 
