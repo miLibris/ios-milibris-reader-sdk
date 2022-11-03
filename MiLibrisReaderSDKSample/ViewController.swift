@@ -36,6 +36,10 @@ final class ViewController: UIViewController {
         // Customize logging (optional)
         //Logger.minLogLevel = .debug
         //Logger.shared = MyLogger.self
+
+        // Reset the tutorial so that it will be displayed on the next opening.
+        // Only use this for testing purposes or if you have a feature that resets tutorials in your app.
+        MiLibrisReaderTutorialProvider().resetTutorial()
     }
 
     @IBOutlet private weak var coverImageView: UIImageView?
@@ -76,6 +80,9 @@ final class ViewController: UIViewController {
         //reader.config.summary.navigationBar.applyMyConfig()
         //reader.config.articleReader.navigationBar.applyMyConfig()
         //reader.config.articleReader.summary.navigationBar.applyMyConfig()
+
+        // Disable the tutorial that is displayed the first time the reader is opened on a new device (optional)
+        //reader.readerTutorialProvider = nil
 
         // Integrate with your article bookmarking system (optional)
         reader.bookmarkProvider = MyBookmarkProvider()

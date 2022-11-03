@@ -17,6 +17,7 @@ MiLibrisReaderSDK is the new miLibris reading SDK (previously called MLPDFReader
     * [Extract a complete archive](#extract-a-complete-archive)
     * [Open the reader](#open-the-reader)
 * [Optional features](#optional-features)
+    * [Configure the reader tutorial](#configure-the-reader-tutorial)
     * [Provide an image view for transitions](#provide-an-image-view-for-transitions)
     * [Resume reading at the last read page](#resume-reading-at-the-last-read-page)
     * [Apply your branding to the reader UI](#apply-your-branding-to-the-reader-ui)
@@ -171,6 +172,39 @@ class MyViewController: UIViewController {
 ```
 
 ## Optional features
+
+### Configure the reader tutorial
+
+The reader is configured to display a tutorial the first time that it is opened on a new device. You can disable it you want:
+
+```swift
+import MiLibrisReaderSDK
+
+class MyViewController: UIViewController, ReaderDelegate {
+
+    func openReader() {
+        // [...]
+
+        // Set this before presenting the reader
+        reader.readerTutorialProvider = nil
+
+        // [...]
+    }
+
+}
+```
+
+For testing purposes or if you have a feature that resets tutorials in your app, you can add:
+
+```swift
+import MiLibrisReaderSDK
+
+func resetTutorials() {
+    MiLibrisReaderTutorialProvider().resetTutorial()
+}
+
+}
+```
 
 ### Provide an image view for transitions
 
