@@ -8,6 +8,7 @@
 * [ModalConfig](#modalconfig)
 * [NavigationBarConfig](#navigationbarconfig)
 * [ReaderConfig](#readerconfig)
+* [ReaderTutorialConfig](#readertutorialconfig)
 * [SlideshowBoxConfig](#slideshowboxconfig)
 * [SummaryConfig](#summaryconfig)
 
@@ -171,6 +172,7 @@ The config for an instance of the reader.
 | 1 | alert | AlertConfig | | The config for alerts displayed by the reader. |
 | 1 | htmlBox | [HtmlBoxConfig](#htmlboxconfig) | | The config for an instance of an HTML box. |
 | 1 | modal | [ModalConfig](#modalconfig) | | The config for the reader modals. |
+| 1 | readerTutorial | [ReaderTutorialConfig](#readertutorialconfig) | | The config for the reader tutorial. |
 | 1 | slideshowBox | [SlideshowBoxConfig](#slideshowboxconfig) | | The config for an instance of a slideshow box. |
 | 1 | features.debugBoxes | Bool | false | Display boxes position with a transparent overlay. |
 | 1 | features.isDoublePagesEnabled | Bool | true | If false, always display single pages, even in landscape. |
@@ -213,6 +215,40 @@ The config for an instance of the reader.
 | 10 | fonts.miniSummaryCellTitle | FontInfo | System bold 16 | The font of the cell title in the mini-summary. |
 | 10 | userInterface.bottomSheetBackgroundStyle | BarBackgroundStyle | icn-arrow-up | The background style of the bottom sheet. |
 | 10 | userInterface.scrollViewIndicatorStyle | UIScrollView.IndicatorStyle | icn-arrow-up | The style of scroll bar indicators. |
+
+## ReaderTutorialConfig
+
+The config for the tutorial of the reader.
+
+![readerTutotial_1.png](./assets/readerTutorial_1.png)
+
+| Badge | Name | Type | Default value | Description |
+| ----- | ---- | ---- | ------------- | ----------- |
+| 1 | colors.closeButtonBackground | UIColor | #000000 35% | The background color of the close button. |
+| 1 | colors.closeButtonTint | UIColor | #FFFFFF | The color applied to the close button. |
+| 1 | images.close | UIImage? | icn-close | The image for the close button. |
+| 2 | colors.imageBackground | UIColor | #ACB9BD | The background color of an item image. |
+| 3 | images.itemWelcome | UIImage? | readerTutorial_welcome | The image for the welcome item. |
+| 3 | images.itemReader | UIImage? | readerTutorial_reader | The image for the reader item. |
+| 3 | images.itemArticles | UIImage? | readerTutorial_articles | The image for the articles item. |
+| 3 | images.itemSummary | UIImage? | readerTutorial_summary | The image for the summary item. |
+| 3 | images.itemArticleReader | UIImage? | readerTutorial_articleReader | The image for the articleReader item. |
+| 3 | images.itemShare | UIImage? | readerTutorial_share | The image for the share item. |
+| 4 | colors.articleCapsuleBackground | UIColor | #8CA4B0 | The background color of the article capsule. |
+| 4 | colors.articleCapsuleText | UIColor | #FFFFFF | The text color of the article capsule. |
+| 4 | fonts.articleCapsule | FontInfo | System bold 10 | The font of the article capsule. |
+| 5 | colors.itemTitleText | UIColor | light: #1E323D, dark: #FFFFFF | The text color of an item title. |
+| 5 | fonts.itemTitleBigPhone | FontInfo | System bold 20 | The font of an item title (big + phone). |
+| 5 | fonts.itemTitleBigTablet | FontInfo | System bold 22 | The font of an item title (big + tablet). |
+| 5 | fonts.itemTitleRegular | FontInfo | System 14 | The font of an item title (regular). |
+| 6 | colors.itemDescriptionText | UIColor | light: #536067, dark: #FFFFFF | The text color of an item description. |
+| 6 | fonts.itemDescription | FontInfo | System 14 | The font of an item description. |
+| 7 | colors.currentPageIndicatorTint | UIColor | #5C6975 | The color of the selected page indicator. |
+| 7 | colors.pageIndicatorTint | UIColor | light: #BEC2C5, dark: #ECECEC | The color of the page indicator. |
+| 8 | colors.skipButtonText | UIColor | light: #536067, dark: #FFFFFF | The text color of the skip button. |
+| 8 | fonts.skipButton | FontInfo | System bold 12 | The font of skip button. |
+| 9 | colors.contentBackground | UIColor | light: #FFFFFF, dark: #4E5559 | The background color of the content. |
+| 10 | colors.overlayBackground | UIColor | #000000 70% | The color of the overlay background. |
 
 ## SlideshowBoxConfig
 
