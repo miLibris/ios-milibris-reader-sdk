@@ -1,5 +1,12 @@
 # MiLibrisReaderSDK iOS changelog
 
+### v0.4.0
+08/11/2022
+
+**Features**
+
+- [TC-5476] Add reader tutorial
+
 ### v0.3.1
 20/09/2022
 
