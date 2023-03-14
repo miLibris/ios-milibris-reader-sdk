@@ -49,11 +49,8 @@ final class ViewController: UIViewController {
     @IBAction private func openReader() {
         print("Open reader")
 
-        // Instantiate a miLibris datasource for your release
-        let datasource = XmlpdfDatasource(releasePath: releasePath, articlesLanguageCode: .frFR)
-
         // Instantiate the reader
-        let reader = Reader(datasource: datasource)
+        let reader = Reader(releasePath: releasePath, articlesLanguageCode: .frFR)
 
         // Open the reader to a specific page (optional)
         reader.initialPageNumber = lastSelectedPage ?? 1

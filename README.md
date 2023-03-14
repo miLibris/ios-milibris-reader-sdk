@@ -158,11 +158,8 @@ import MiLibrisReaderSDK
 class MyViewController: UIViewController {
 
     func openReader() {
-        // Instantiate a miLibris datasource for your release
-        let datasource = XmlpdfDatasource(releasePath: releasePath, articlesLanguageCode: .frFR)
-
         // Instantiate the reader
-        let reader = Reader(datasource: datasource)
+        let reader = Reader(releasePath: releasePath, articlesLanguageCode: .frFR)
 
         // Present it from a view controller of your app
         reader.presentReaderViewController(from: self)
