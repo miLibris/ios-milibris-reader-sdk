@@ -59,10 +59,14 @@ The config for an instance of the article reader.
 | 2 | images.close | UIImage? | icn-close | The image for the close button in the navigation bar. |
 | 3 | summary | [SummaryConfig](#summaryConfig) | | The config for the the article reader summary. |
 | 3 | images.summary | UIImage? | icn-close | The image for the summary button in the navigation bar. |
-| 4 | colors.background | UIColor | light: #F9F9F9 / dark: #1F1F1F | The background color. |
+| 4 | alert | [AlertConfig](#alertConfig) | | The config for alerts displayed by the article reader. |
+| 4 | colors.background | UIColor | light: #FFFFFF / dark: #1F1F1F | The background color. |
 | 4 | userInterface.activityIndicatorStyle | UIActivityIndicatorView.Style | medium | The style of activity indicators. |
 | 4 | userInterface.scrollViewIndicatorStyle | UIScrollView.IndicatorStyle | default | The style of scroll bar indicators. |
 | 5 | articleImage | [ArticleImageConfig](#articleimageconfig) | | The config for the the article image viewer. |
+| 5 | features.debugImageCrop | Bool | false | Display rectangles on images previewing image crop. |
+| 5 | features.onDeviceSmartCropEnabled | Bool | true | Enable on-device smart crop for images. |
+| 5 | colors.imagePlaceholder | UIColor | light: #F9F9F9 / dark: #536067 | The background color of image views when loading. |
 | 6 | colors.fisheyeLabelBackground | UIColor | #FFFFFF | The background color of the fisheye label. |
 | 6 | colors.fisheyeLabelText | UIColor | #15202B | The text color of the fisheye label. |
 | 6 | fonts.fisheyeLabel | FontInfo | System 12 | The font for the fisheye label. |
@@ -71,11 +75,54 @@ The config for an instance of the article reader.
 | 7 | fonts.bottomBar | FontInfo | System 12 | The font for the bottom bar text. |
 | 7 | userInterface.bottomBarBackgroundStyle | BarBackgroundStyle | translucent | The background style of the bottom bar. |
 | 8 | features.isTextToSpeechEnabled | Bool | true | Enable text-to-speech feature in article reader. |
+| 8 | images.bookmarkActivate | UIImage? | userAction_icn-save-on | The image for the activate bookmark button in the bottom bar. |
+| 8 | images.bookmarkDeactivate | UIImage? | userAction_icn-save-off | The image for the deactivate bookmark button in the bottom bar. |
 | 8 | images.textToSpeechActivate | UIImage? | icn-close | The image for the activate text-to-speech button in the bottom bar. |
 | 8 | images.textToSpeechDeactivate | UIImage? | icn-close | The image for the deactivate text-to-speech button in the bottom bar. |
 | 9 | articleSettings | [ArticleSettingsConfig](#articlesettingsconfig) | | The config for the the article settings. |
 | 9 | images.settings | UIImage? | icn-close | The image for the settings button in the bottom bar. |
 | 10 | images.share | UIImage? | icn-close | The image for the share button in the bottom bar. |
+| 11 | colors.link | UIColor | light: #15202B / dark: #FFFFFF | The colors of links in text. |
+| 11 | fonts.paragraphB | FontInfo | System Bold 18 | The font for <b> tags in paragraphs. |
+| 11 | fonts.paragraphEm | FontInfo | System Italic Bold 18 | The font for <em> tags in paragraphs. |
+| 11 | fonts.paragraphI | FontInfo | System Italic 18 | The font for <i> tags in paragraphs. |
+| 11 | fonts.paragraphStrong | FontInfo | System Bold 18 | The font for <strong> tags in paragraphs. |
+| 11 | text.dropcap | TextConfig | light: #15202B / dark: #FFFFFF / System Black 56 / line spacing 2 | The text config for dropcaps. |
+| 11 | text.intertitlePhone | TextConfig | light: #15202B / dark: #FFFFFF / Source Serif Pro Bold 22 / line spacing 2 | The text config for intertitles on phones. |
+| 11 | text.intertitleTablet | TextConfig | light: #15202B / dark: #FFFFFF / Source Serif Pro Bold 24 / line spacing 2 | The text config for intertitles on tablets. |
+| 11 | text.paragraph | TextConfig | light: #15202B / dark: #FFFFFF / System 18 / line spacing 5 | The text config for paragraphs. |
+| 12 | colors.nextArticleArrow | UIColor | light: #15202B / dark: #FFFFFF | The color used for the arrow of the next article block. |
+| 12, 17, 18 | colors.separator | UIColor | light: #ECECEC / dark: #535353 | The color of the separators in content. |
+| 12 | images.arrowRight | UIImage? | icn-arrow-right | The image for the arrow right indicator of the article footer. |
+| 12 | text.nextArticleInfos | TextConfig | light: #86949B / dark: #878787 / System 12 / line spacing 0 | The text config used for the infos label of the next article block. |
+| 12 | text.nextArticleNext | TextConfig | light: #BEC2C5 / dark: #878787 / System 11 / line spacing 0 | The text config used for the next label of the next article block. |
+| 12 | text.nextArticleTitle | TextConfig | light: #15202B / dark: #FFFFFF / Source Serif Pro Black 18 / line spacing 0 | The text config used for the title label of the next article block. |
+| 13 | colors.primeImageGradient | UIColor | #15202B | The color used for the prime image gradient. |
+| 13 | colors.primeImageContent | UIColor | #FFFFFF | The color used for content displayed over the prime image. |
+| 13 | colors.rubricBackgroundOverPrimeImage | UIColor | #FFFFFF | The background color of the rubric views when over the prime image. |
+| 13 | colors.rubricTextOverPrimeImage | UIColor | #536067 | The text color of the rubric views when over the prime image. |
+| 13 | images.arrowDown | UIImage? | icn-arrow-down | The image for the arrow down indicator of the article header. |
+| 14 | text.caption | TextConfig | light: #86949B / dark: #BEC2C5 / System 14 / line spacing 3 | The text config for captions. |
+| 14 | text.captionOverImage | TextConfig | #FFFFFF / System 12 / line spacing 3 | The text config for captions over images. |
+| 14 | text.credit | TextConfig | light: #86949B / dark: #BEC2C5 / System Bold 14 / line spacing 3 | The text config for credits. |
+| 14 | text.creditOverImage | TextConfig | #FFFFFF / System Bold 12 / line spacing 3 | The text config for credits over images. |
+| 15 | colors.rubricBackground | UIColor | light: #1E323D / dark: #FFFFFF | The background color of the rubric views. |
+| 15 | colors.rubricText | UIColor | light: #FFFFFF / dark: #536067 | The text color of the rubric views. |
+| 15 | fonts.rubric | FontInfo | System Medium 14 | The font for the rubric views. |
+| 15 | images.readingTime | UIImage? | fi_watch | The image for the reading time indicator. |
+| 15 | text.author | TextConfig | light: #86949B / dark: #BEC2C5 / System 16 / line spacing 2 | The text config for the author. |
+| 15 | text.subtheme | TextConfig | light: #86949B / dark: #BEC2C5 / System 14 / line spacing 0 | The text config for subthemes. |
+| 15 | text.subtitle | TextConfig | light: #15202B / dark: #FFFFFF / System SemiBold 14 / line spacing 3 | The text config for the subtitle. |
+| 15 | text.surtitle | TextConfig | light: #15202B / dark: #FFFFFF / System SemiBold 14 / line spacing 3 | The text config for the surtitle. |
+| 15 | text.titlePhone | TextConfig | light: #15202B / dark: #FFFFFF / Source Serif Pro Black 32 / line spacing 1 | The text config for the title on phones. |
+| 15 | text.titleTablet | TextConfig | light: #15202B / dark: #FFFFFF / Source Serif Pro Black 48 / line spacing 1 | The text config for the title on tablets. |
+| 16 | text.heading | TextConfig | light: #15202B / dark: #FFFFFF / Source Serif Pro Black 18 / line spacing 5 | The text config for headings. |
+| 17 | colors.sectionBackground | UIColor | light: #F9F9F9 / dark: #393939 | The background color of sections. |
+| 18 | text.note | TextConfig | light: #536067 / dark: #FFFFFF / Source Italic 14 / line spacing 3 | The text config for notes. |
+| | text.interviewAnswer | TextConfig | light: #15202B / dark: #FFFFFF / System 18 / line spacing 5 | The text config for interview answers. |
+| | text.interviewQuestion | TextConfig | light: #15202B / dark: #FFFFFF / Source Serif Pro Bold 20 / line spacing 4 | The text config for interview questions. |
+| | text.quote | TextConfig | light: #15202B / dark: #FFFFFF / Source Serif Pro Bold 24 / line spacing 4 | The text config for quotes. |
+| | text.quoteAuthor | TextConfig | light: #86949B / dark: #BEC2C5 / Source Serif Pro Bold 18 / line spacing 7 | The text config for quote authors. |
 
 ## ArticleSettingsConfig
 
@@ -169,7 +216,7 @@ The config for an instance of the reader.
 
 | Badge | Name | Type | Default value | Description |
 | ----- | ---- | ---- | ------------- | ----------- |
-| 1 | alert | AlertConfig | | The config for alerts displayed by the reader. |
+| 1 | alert | [AlertConfig](#alertConfig) | | The config for alerts displayed by the reader. |
 | 1 | htmlBox | [HtmlBoxConfig](#htmlboxconfig) | | The config for an instance of an HTML box. |
 | 1 | modal | [ModalConfig](#modalconfig) | | The config for the reader modals. |
 | 1 | readerTutorial | [ReaderTutorialConfig](#readertutorialconfig) | | The config for the reader tutorial. |
@@ -293,6 +340,7 @@ The config for an instance of the summary.
 | 10 | images.bookmarkOff | UIImage? | userAction_icn-save-off | The image for bookmark button in cells (OFF). |
 | 11 | images.bookmarkOn | UIImage? | userAction_icn-save-on | The image for bookmark button in cells (ON). |
 | 12 | colors.imagePlaceholder | UIColor | light: #F9F9F9 / dark: #536067 | The background color of image views when loading. |
+| 12 | features.debugImageCrop | Bool | false | Display rectangles on images previewing image crop. |
 | 13 | colors.separator | UIColor | light: #ECECEC / dark: #333333 | The cell separator color. |
 | 14 | colors.overlayBackground | UIColor | light: #000000 40% / dark: #606060 40% | The background color of the overlay when showing content over a screen. |
 | 15 | colors.rubricPlaceholder | UIColor | light: #ECECEC / dark: #333333 | The text color of rubric views while loading. |
