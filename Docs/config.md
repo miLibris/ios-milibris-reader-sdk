@@ -51,6 +51,11 @@ The config for an instance of the article image viewer.
 The config for an instance of the article reader.
 
 ![articlereader_1.png](./assets/articlereader_1.png)
+![articlereader_2.png](./assets/articlereader_2.png)
+![articlereader_3.png](./assets/articlereader_3.png)
+![articlereader_4.png](./assets/articlereader_4.png)
+![articlereader_5.png](./assets/articlereader_5.png)
+![articlereader_6.png](./assets/articlereader_6.png)
 
 | Badge | Name | Type | Default value | Description |
 | ----- | ---- | ---- | ------------- | ----------- |
