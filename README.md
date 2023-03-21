@@ -389,7 +389,7 @@ See the definition of `ReaderDelegate` for a complete list of events.
 
 ### Provide article sharing functionality
 
-You can provide a sharing provider to the reader in order to add a "Share" button on articles. Your sharing provider is responsible for providing the URL to share for an article.
+You can provide a sharing provider to the reader in order to add a "Share" button on articles. Your sharing provider is responsible for providing the content to share for an article.
 
 ```swift
 import MiLibrisReaderSDK
@@ -409,9 +409,10 @@ class MyViewController: UIViewController {
 
 class MyWebsiteSharingProvider: SharingProvider {
 
-    func articleSharingURL(article: ArticlePreview) throws -> URL {
+    func articleSharingContent(article: ArticlePreview) throws -> SharingContent {
         // You could use the miLibris article identifier or the article title to match with articles on your website
-        return URL(string: "https://www.mywebsite.com/article/\(article.articleId)")!
+        let url = URL(string: "https://www.mywebsite.com/article/\(article.articleId)")!
+        return SharingContent(url: url, title: article.title)
     }
 
 }
