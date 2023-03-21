@@ -1,5 +1,12 @@
 # MiLibrisReaderSDK iOS changelog
 
+### v0.5.0
+21/03/2023
+
+**Breaking**
+
+- [TC-5940] Make the miLibris datasource internal
+
 ### v0.4.0
 08/11/2022
 
