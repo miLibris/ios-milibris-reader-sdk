@@ -91,6 +91,9 @@ final class ViewController: UIViewController {
         let issueId = "milibris-issue-id" // the MID of the issue being opened, as returned by the miLibris API
         reader.sharingProvider = MyMiLibrisSharingProvider(issueId: issueId)
 
+        // Add a print button (optional)
+        reader.config.features.printPageEnabled = true
+
         // Present it
         reader.presentReaderViewController(from: self)
     }

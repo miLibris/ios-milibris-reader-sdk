@@ -27,6 +27,7 @@ MiLibrisReaderSDK is the new miLibris reading SDK (previously called MLPDFReader
     * [Provide article bookmark functionality](#provide-article-bookmark-functionality)
     * [Customize logging](#customize-logging)
     * [Present your own article reader](#present-your-own-article-reader)
+    * [Add a print button](#add-a-print-button)
 
 ## Issues
 
@@ -575,4 +576,25 @@ class MyArticleViewController: UIViewController {
 
 }
 
+```
+
+### Add a print button
+
+If you want to allow users to print a single page or a double page of your publication, you can do so by updating the config:
+
+```swift
+import MiLibrisReaderSDK
+
+class MyViewController: UIViewController {
+
+    func openReader() {
+        // [...]
+
+        // Set this before presenting the reader
+        reader.config.features.printEnabled = true
+
+        // [...]
+    }
+
+}
 ```
