@@ -247,8 +247,8 @@ The config for an instance of the reader.
 | 5 | images.close | UIImage? | icn-close | The image for the close button in the navigation bar. |
 | 6 | summary | [SummaryConfig](#summaryconfig) | | The config for the reader summary. |
 | 6 | images.summary | UIImage? | icn-summary | The image for the summary button in the navigation bar. |
-| 7 | colors.actionButtonBackgroundColor | UIColor | #15202B 60% | The background color of the action buttons on pages. |
-| 7 | colors.actionButtonTintColor | UIColor | #FFFFFF | The tint color of the action buttons on pages. |
+| 7 | colors.actionButtonBackgroundColor | UIColor | light: #536067 / dark: #B4B4B4 | The background color of the action buttons on pages. |
+| 7 | colors.actionButtonTintColor | UIColor | light: #F1F1F1 / dark: #F1F1F1 | The tint color of the action buttons on pages. |
 | 7 | colors.articleCapsuleBottomBackground | UIColor | light: #536067 / dark: #B4B4B4 | The background color of the article capsule when the bottom sheet is in the "bottom" position. |
 | 7 | colors.articleCapsuleBottomText | UIColor | light: #F1F1F1 / dark: #F1F1F1 | The text color of the article capsule when the bottom sheet is in the "bottom" position. |
 | 7 | images.print | UIImage? | icn-print | The image for the print action button. |
