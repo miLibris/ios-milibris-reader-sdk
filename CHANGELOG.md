@@ -1,5 +1,36 @@
 # MiLibrisReaderSDK iOS changelog
 
+### v1.1.0
+27/06/2023
+
+**Features**
+
+- [TC-5651] Add article source link in articles
+- [TC-6036] Implement dropcaps in miLibris datasource
+- [TC-6040] Add print action
+
+### v1.0.2
+02/06/2023
+
+**Improvements**
+
+- [TC-6069] Fix top bar buttons layout on small screens / long titles
+
+### v1.0.1
+21/04/2023
+
+**Improvements**
+
+- [TC-6059] Fix intertitle layout on iPad
+
+### v1.0.0
+19/04/2023
+
+**New article reader**
+
+- Uses native components instead of web components to improve performance and allow better customization
+- The previous reader is still available for legacy articles
+
 ### v0.5.0
 21/03/2023
 

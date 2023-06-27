@@ -10,8 +10,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MiLibrisReaderSDK",
-            url: "https://github.com/miLibris/ios-milibris-reader-sdk/releases/download/v0.5.0/MiLibrisReaderSDK.xcframework.zip",
-            checksum: "62f9b0281881270df6d2aeb40d05d50428ce886ea61050ec2042571215190917"
+            url: "https://github.com/miLibris/ios-milibris-reader-sdk/releases/download/v1.1.0/MiLibrisReaderSDK.xcframework.zip",
+            checksum: "c2da9691a196ca0b8b5fc19802042b471571d6832ebe3a47c63ab90d766d4bd8"
         ),
     ]
 )
