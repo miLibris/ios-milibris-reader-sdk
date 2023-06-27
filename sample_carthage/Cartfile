@@ -1,1 +1,1 @@
-binary "https://raw.githubusercontent.com/miLibris/ios-milibris-reader-sdk/main/MiLibrisReaderSDK.json" >= 0.1
+binary "https://raw.githubusercontent.com/miLibris/ios-milibris-reader-sdk/main/MiLibrisReaderSDK.json" ~> 1.0

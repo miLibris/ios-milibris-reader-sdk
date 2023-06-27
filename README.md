@@ -11,6 +11,7 @@ MiLibrisReaderSDK is the new miLibris reading SDK (previously called MLPDFReader
     * [Installation via CocoaPods](#installation-via-cocoapods)
     * [Installation via Carthage](#installation-via-carthage)
     * [Manual installation](#manual-installation)
+    * [Migrating from MiLibrisReaderSDK v0](#migrating-from-milibrisreadersdk-v0)
     * [Migrating from MLPDFReaderSDK v1](#migrating-from-mlpdfreadersdk-v1)
 * [Implementation](#implementation)
     * [Usual workflow](#usual-workflow)
@@ -64,7 +65,7 @@ Requires CocoaPods >= 1.9
 
 - Add the following line in your *Podfile*:
 
-`pod 'MiLibrisReaderSDK', '~> 0.0'`
+`pod 'MiLibrisReaderSDK', '~> 1.0'`
 
 - Run `pod install`
 
@@ -81,7 +82,7 @@ Requires Carthage >= 0.38
 
 - Add the following line in your *Cartfile*:
 
-`binary "https://raw.githubusercontent.com/miLibris/ios-milibris-reader-sdk/main/MiLibrisReaderSDK.json" ~> 0.0`
+`binary "https://raw.githubusercontent.com/miLibris/ios-milibris-reader-sdk/main/MiLibrisReaderSDK.json" ~> 1.0`
 
 - In the project directory, run `carthage update --use-xcframeworks`
 
@@ -105,6 +106,30 @@ An example of an Xcode project with manual integration is available in this repo
 - Download and unzip the SDK from the latest release: https://github.com/miLibris/ios-milibris-reader-sdk/releases/latest
 - Move *MiLibrisReaderSDK.xcframework* in *sample_manual*.
 - Open *sample_manual/MiLibrisReaderSDKSample.xcodeproj*
+
+### Migrating from MiLibrisReaderSDK v0
+
+If using Swift Package Manager:
+
+- In your Xcode project, navigate to the project editor > your project > Package Dependencies
+- Double-click on the `ios-milibris-reader-sdk` package
+- Edit the version rule to *Up to Next Major 1.0.0 < 2.0.0*
+
+If using CocoaPods:
+
+- Update your Podfile with the following line:
+
+`pod 'MiLibrisReaderSDK', '~> 1.0'`
+
+- Run `pod update MiLibrisReaderSDK`
+
+If using Carthage:
+
+- Update your Cartfile with the following line:
+
+`binary "https://raw.githubusercontent.com/miLibris/ios-milibris-reader-sdk/main/MiLibrisReaderSDK.json" ~> 1.0`
+
+- In the project directory, run `carthage update --use-xcframeworks`
 
 ### Migrating from MLPDFReaderSDK v1
 
