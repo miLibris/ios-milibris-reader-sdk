@@ -124,10 +124,16 @@ The config for an instance of the article reader.
 | 16 | text.heading | TextConfig | light: #15202B / dark: #FFFFFF / Source Serif Pro Black 18 / line spacing 5 | The text config for headings. |
 | 17 | colors.sectionBackground | UIColor | light: #F9F9F9 / dark: #393939 | The background color of sections. |
 | 18 | text.note | TextConfig | light: #536067 / dark: #FFFFFF / Source Italic 14 / line spacing 3 | The text config for notes. |
+| | colors.sourceBorder | UIColor | light: #ECECEC / dark: #535353 | The border color of the article source. |
+| | colors.sourceCtaButtonBackground | UIColor | light: #536067 / dark: #B4B4B4 | The background color of the article source CTA button. |
+| | colors.sourceCtaButtonText | UIColor | light: #F1F1F1 / dark: #F1F1F1 | The text color of the article source CTA button. |
+| | fonts.sourceCtaButton | FontInfo | System Bold 11 | The font of the article source CTA button. |
+| | text.interviewAnswer | TextConfig | light: #15202B / dark: #FFFFFF / System 18 / line spacing 5 | The text config for interview answers. |
 | | text.interviewAnswer | TextConfig | light: #15202B / dark: #FFFFFF / System 18 / line spacing 5 | The text config for interview answers. |
 | | text.interviewQuestion | TextConfig | light: #15202B / dark: #FFFFFF / Source Serif Pro Bold 20 / line spacing 4 | The text config for interview questions. |
 | | text.quote | TextConfig | light: #15202B / dark: #FFFFFF / Source Serif Pro Bold 24 / line spacing 4 | The text config for quotes. |
 | | text.quoteAuthor | TextConfig | light: #86949B / dark: #BEC2C5 / Source Serif Pro Bold 18 / line spacing 7 | The text config for quote authors. |
+| | text.sourceText | TextConfig | light: #1E323D / dark: #FFFFFF / System SemiBold 14 / line spacing 3 | The text config for the text of the article source. |
 
 ## ArticleSettingsConfig
 
