@@ -92,7 +92,7 @@ The config for an instance of the article reader.
 | 11 | fonts.paragraphEm | FontInfo | System Italic Bold 18 | The font for <em> tags in paragraphs. |
 | 11 | fonts.paragraphI | FontInfo | System Italic 18 | The font for <i> tags in paragraphs. |
 | 11 | fonts.paragraphStrong | FontInfo | System Bold 18 | The font for <strong> tags in paragraphs. |
-| 11 | text.dropcap | TextConfig | light: #15202B / dark: #FFFFFF / System Black 56 / line spacing 2 | The text config for dropcaps. |
+| 11 | text.dropcap | TextConfig | light: #15202B / dark: #FFFFFF / System Bold 56 / line spacing 2 | The text config for dropcaps. |
 | 11 | text.intertitlePhone | TextConfig | light: #15202B / dark: #FFFFFF / Source Serif Pro Bold 22 / line spacing 2 | The text config for intertitles on phones. |
 | 11 | text.intertitleTablet | TextConfig | light: #15202B / dark: #FFFFFF / Source Serif Pro Bold 24 / line spacing 2 | The text config for intertitles on tablets. |
 | 11 | text.paragraph | TextConfig | light: #15202B / dark: #FFFFFF / System 18 / line spacing 5 | The text config for paragraphs. |
