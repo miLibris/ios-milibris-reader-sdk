@@ -89,7 +89,7 @@ The config for an instance of the article reader.
 | 10 | images.share | UIImage? | icn-close | The image for the share button in the bottom bar. |
 | 11 | colors.link | UIColor | light: #15202B / dark: #FFFFFF | The colors of links in text. |
 | 11 | fonts.paragraphB | FontInfo | System Bold 18 | The font for <b> tags in paragraphs. |
-| 11 | fonts.paragraphEm | FontInfo | System Italic Bold 18 | The font for <em> tags in paragraphs. |
+| 11 | fonts.paragraphEm | FontInfo | System Italic 18 | The font for <em> tags in paragraphs. |
 | 11 | fonts.paragraphI | FontInfo | System Italic 18 | The font for <i> tags in paragraphs. |
 | 11 | fonts.paragraphStrong | FontInfo | System Bold 18 | The font for <strong> tags in paragraphs. |
 | 11 | text.dropcap | TextConfig | light: #15202B / dark: #FFFFFF / System Bold 56 / line spacing 2 | The text config for dropcaps. |
