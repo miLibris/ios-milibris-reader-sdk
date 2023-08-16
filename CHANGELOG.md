@@ -6,7 +6,7 @@
 **Features**
 
 - [TC-6281] Add new utility method to hide the logo capsule
-- [TC-6285] Update font for *<em>* tags
+- [TC-6285] Update font for `<em>` tags
 
 ### v1.1.0
 27/06/2023
