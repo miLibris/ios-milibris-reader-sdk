@@ -1,5 +1,13 @@
 # MiLibrisReaderSDK iOS changelog
 
+### v1.2.0
+16/08/2023
+
+**Features**
+
+- [TC-6281] Add new utility method to hide the logo capsule
+- [TC-6285] Update font for *<em>* tags
+
 ### v1.1.0
 27/06/2023
 
