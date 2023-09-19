@@ -29,6 +29,7 @@ MiLibrisReaderSDK is the new miLibris reading SDK (previously called MLPDFReader
     * [Customize logging](#customize-logging)
     * [Present your own article reader](#present-your-own-article-reader)
     * [Add a print button](#add-a-print-button)
+    * [Enable background mode for text-to-speech](#enable-background-mode-for-text-to-speech)
 
 ## Issues
 
@@ -623,3 +624,12 @@ class MyViewController: UIViewController {
 
 }
 ```
+
+### Enable background mode for text-to-speech
+
+If you want to allow the text-to-speech audio to continue while the app is in the background, you need to enable the `audio` background mode in your iOS project.
+
+- Select your project in Xcode
+- Open the "Signing & Capabilities" tab
+- Enable "Background Modes" if needed
+- Enable "Audio, AirPlay, and Picture in Picture"
