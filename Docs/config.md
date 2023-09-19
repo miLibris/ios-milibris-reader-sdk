@@ -63,6 +63,7 @@ The config for an instance of the article reader.
 | 1 | userInterface.statusBarStyle | UIStatusBarStyle | default | The style of the status bar. |
 | 2 | images.close | UIImage? | icn-close | The image for the close button in the navigation bar. |
 | 3 | summary | [SummaryConfig](#summaryConfig) | | The config for the the article reader summary. |
+| 3 | features.isSummaryEnabled | Bool | true | Hides the summary button if disabled. Does not affect the mini-summary and long tap gesture. |
 | 3 | images.summary | UIImage? | icn-close | The image for the summary button in the navigation bar. |
 | 4 | alert | [AlertConfig](#alertConfig) | | The config for alerts displayed by the article reader. |
 | 4 | colors.background | UIColor | light: #FFFFFF / dark: #1F1F1F | The background color. |
@@ -252,6 +253,7 @@ The config for an instance of the reader.
 | 4 | userInterface.statusBarStyle | UIStatusBarStyle | icn-arrow-up | The style of the status bar. |
 | 5 | images.close | UIImage? | icn-close | The image for the close button in the navigation bar. |
 | 6 | summary | [SummaryConfig](#summaryconfig) | | The config for the reader summary. |
+| 6 | features.isSummaryEnabled | Bool | true | Hides the summary button if disabled. Does not affect the mini-summary and long tap gesture. |
 | 6 | images.summary | UIImage? | icn-summary | The image for the summary button in the navigation bar. |
 | 7 | colors.actionButtonBackgroundColor | UIColor | light: #536067 / dark: #B4B4B4 | The background color of the action buttons on pages. |
 | 7 | colors.actionButtonTintColor | UIColor | light: #F1F1F1 / dark: #F1F1F1 | The tint color of the action buttons on pages. |
