@@ -1,5 +1,14 @@
 # MiLibrisReaderSDK iOS changelog
 
+### v1.3.0
+28/09/2023
+
+**Features**
+
+- [TC-5967] Support audio background mode for text-to-speech
+- [TC-6379] Add config to disable the summary in the reader and article reader
+- Add an optional article search feature in the summary
+
 ### v1.2.0
 16/08/2023
 
