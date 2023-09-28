@@ -49,8 +49,16 @@ final class ViewController: UIViewController {
     @IBAction private func openReader() {
         print("Open reader")
 
+        // Configure an article search provider (optional)
+        /*let searchProvider = MiLibrisSearchProvider(
+            pointOfSaleMid: "<your_point_of_sale_mid>",
+            basicAuth: "<your_basic_auth>",
+            issueMid: "<issue_mid_being_opened>"
+        )*/
+        let searchProvider: SearchProvider? = nil
+
         // Instantiate the reader
-        let reader = Reader(releasePath: releasePath, articlesLanguageCode: .frFR)
+        let reader = Reader(releasePath: releasePath, articlesLanguageCode: .frFR, searchProvider: searchProvider)
 
         // Open the reader to a specific page (optional)
         reader.initialPageNumber = lastSelectedPage ?? 1

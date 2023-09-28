@@ -30,6 +30,7 @@ MiLibrisReaderSDK is the new miLibris reading SDK (previously called MLPDFReader
     * [Present your own article reader](#present-your-own-article-reader)
     * [Add a print button](#add-a-print-button)
     * [Enable background mode for text-to-speech](#enable-background-mode-for-text-to-speech)
+    * [Configure article search](#configure-article-search)
 
 ## Issues
 
@@ -633,3 +634,29 @@ If you want to allow the text-to-speech audio to continue while the app is in th
 - Open the "Signing & Capabilities" tab
 - Enable "Background Modes" if needed
 - Enable "Audio, AirPlay, and Picture in Picture"
+
+### Configure article search
+
+If you want to add a search interface for articles in the summary, you need to configure the miLibris API access with the same keys you use in your app:
+
+```swift
+import MiLibrisReaderSDK
+
+class MyViewController: UIViewController, ReaderDelegate {
+
+    func openReader() {
+        // Instantiate the reader with the miLibris search API
+        let searchProvider = MiLibrisSearchProvider(
+            pointOfSaleMid: "<your_point_of_sale_mid>",
+            basicAuth: "<your_basic_auth>",
+            issueMid: "<issue_mid_being_opened>"
+        )
+        let reader = Reader(
+            releasePath: releasePath, articlesLanguageCode: .frFR, searchProvider: searchProvider
+        )
+
+        // [...]
+    }
+
+}
+```
