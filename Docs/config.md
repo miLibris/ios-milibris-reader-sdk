@@ -64,6 +64,11 @@ The config for an instance of the article reader.
 | 2 | images.close | UIImage? | icn-close | The image for the close button in the navigation bar. |
 | 3 | summary | [SummaryConfig](#summaryConfig) | | The config for the the article reader summary. |
 | 3 | features.isSummaryEnabled | Bool | true | Hides the summary button if disabled. Does not affect the mini-summary and long tap gesture. |
+| 3 | colors.searchResultsIndicatorText | UIColor | light: #86949B / dark: #FFFFFF | The text color of the search results indicator text. |
+| 3 | colors.searchResultsIndicatorValue | UIColor | light: #1E323D / dark: #FFFFFF | The text color of the search results indicator value. |
+| 3 | colors.searchResultsIndicatorValueBackground | UIColor | light: #ECECEC / dark: #1F1F1F | The color of the search results indicator value background. |
+| 3 | fonts.searchResultsIndicatorText | FontInfo | System SemiBold 10 | The font of the search results indicator text. |
+| 3 | fonts.searchResultsIndicatorValue | FontInfo | System SemiBold 14 | The font of the search results indicator value. |
 | 3 | images.summary | UIImage? | icn-close | The image for the summary button in the navigation bar. |
 | 4 | alert | [AlertConfig](#alertConfig) | | The config for alerts displayed by the article reader. |
 | 4 | colors.background | UIColor | light: #FFFFFF / dark: #1F1F1F | The background color. |
@@ -202,6 +207,7 @@ The config for an instance of a navigation bar.
 
 ![navigationbar_1.png](./assets/navigationbar_1.png)
 ![navigationbar_2.png](./assets/navigationbar_2.png)
+![navigationbar_3.png](./assets/navigationbar_3.png)
 
 | Badge | Name | Type | Default value | Description |
 | ----- | ---- | ---- | ------------- | ----------- |
@@ -217,6 +223,10 @@ The config for an instance of a navigation bar.
 | 7 | colors.logoBackground | UIColor? | #FFFFFF | The background color of the logo. |
 | 7 | colors.logoBorder | UIColor? | #ECECEC | The border color of the logo. |
 | 7 | images.logo | UIImage? | nil | The brand logo to display in the reader, if no one is provided by the datasource. |
+| 8 | colors.searchBarTint | UIColor | light: #536067 / dark: #AAAAAA | The tint color of the search bar. |
+| 8 | fonts.searchBarCancel | FontInfo | System SemiBold 12 | The font of the search bar cancel button. |
+| 8 | fonts.searchBarText | FontInfo | System 14 | The font of the search bar text. |
+| 8 | images.searchBarSearch | UIImage? | icn-search | The image for the search icon in the search bar. |
 
 ## ReaderConfig
 
@@ -336,6 +346,8 @@ The config for an instance of the summary.
 ![summary_1.png](./assets/summary_1.png)
 ![summary_2.png](./assets/summary_2.png)
 ![summary_3.png](./assets/summary_3.png)
+![summary_4.png](./assets/summary_4.png)
+![summary_5.png](./assets/summary_5.png)
 
 | Badge | Name | Type | Default value | Description |
 | ----- | ---- | ---- | ------------- | ----------- |
@@ -362,3 +374,21 @@ The config for an instance of the summary.
 | 14 | colors.overlayBackground | UIColor | light: #000000 40% / dark: #606060 40% | The background color of the overlay when showing content over a screen. |
 | 15 | colors.rubricPlaceholder | UIColor | light: #ECECEC / dark: #333333 | The text color of rubric views while loading. |
 | 16 | colors.cellPlaceholder | UIColor | light: #ECECEC / dark: #333333 | The color of the label placeholders while loading. |
+| 17 | colors.searchHeaderNumber | UIColor | light: #1F1F1F / dark: #FFFFFF | The text color of the search results header number. |
+| 17 | colors.searchHeaderText | UIColor | light: #1F1F1F / dark: #FFFFFF | The text color of the search results header text. |
+| 17 | colors.searchResultHighlight | UIColor? | nil | The color of the search text highlight in search results. |
+| 17 | fonts.searchHeaderNumber | FontInfo | System bold 24 | The font of the search results header number. |
+| 17 | fonts.searchHeaderText | FontInfo | System bold 16 | The font of the search results header text. |
+| 18 | colors.searchEmptyStateActionBackground | UIColor | light: #FFFFFF / dark: #FFFFFF | The background color of the action button in the search empty state view. |
+| 18 | colors.searchEmptyStateActionBorder | UIColor | light: #ECECEC / dark: #ECECEC | The border color of the action button in the search empty state view. |
+| 18 | colors.searchEmptyStateActionTitle | UIColor | light: #1E323D / dark: #1E323D | The text color of the action button title in the search empty state view. |
+| 18 | colors.searchEmptyStateDescription | UIColor | light: #536067 / dark: #FFFFFF | The color of the description in the search empty state view. |
+| 18 | colors.searchEmptyStateImage | UIColor | light: #86949B / dark: #BEC2C5 | The color of the image in the search empty state view. |
+| 18 | colors.searchEmptyStateTitle | UIColor | light: #15202B / dark: #FFFFFF | The color of the title in the search empty state view. |
+| 18 | features.debugSearchStates | Bool | false | Use search terms "noresults", "networkerror" or "error" to display empty states. |
+| 18 | fonts.searchEmptyStateActionTitle | FontInfo | System 22 | The font of the title in the search empty state view. |
+| 18 | fonts.searchEmptyStateDescription | FontInfo | System Bold 24 | The font of the search results header number. |
+| 18 | fonts.searchEmptyStateTitle | FontInfo | System Bold 16 | The font of the search results header text. |
+| 18 | images.search | UIImage? | icn-search | The image for the search button. |
+| 18 | images.searchNetworkError | UIImage? | connectivity-issue | The image for search network errors. |
+| 18 | images.searchError | UIImage? | icn-warning | The image for search errors. |
