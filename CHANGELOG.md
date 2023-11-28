@@ -1,5 +1,17 @@
 # MiLibrisReaderSDK iOS changelog
 
+### v1.4.0
+28/11/2023
+
+**Features**
+
+- [TC-6295] Filter advertisements in reader capsule, mini-summary and summary
+- [TC-6295] Add advertisement templates
+
+**Improvements**
+
+- [TC-6371] Fix spelling
+
 ### v1.3.0
 28/09/2023
 
