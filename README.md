@@ -31,6 +31,7 @@ MiLibrisReaderSDK is the new miLibris reading SDK (previously called MLPDFReader
     * [Add a print button](#add-a-print-button)
     * [Enable background mode for text-to-speech](#enable-background-mode-for-text-to-speech)
     * [Configure article search](#configure-article-search)
+    * [Disable image crop in articles](#disable-image-crop-in-articles)
 
 ## Issues
 
@@ -654,6 +655,28 @@ class MyViewController: UIViewController, ReaderDelegate {
         let reader = Reader(
             releasePath: releasePath, articlesLanguageCode: .frFR, searchProvider: searchProvider
         )
+
+        // [...]
+    }
+
+}
+```
+
+### Disable image crop in articles
+
+By default some images in articles are cropped to better fit the templates. If you want to disable all image cropping you can add the following configuration:
+
+```swift
+import MiLibrisReaderSDK
+
+class MyViewController: UIViewController {
+
+    func openReader() {
+        // [...]
+
+        // Set this before presenting the reader
+        reader.config.articleReader.features.forceLayout = .default
+        reader.config.articleReader.features.isImageCropEnabled = false
 
         // [...]
     }

@@ -1,5 +1,19 @@
 # MiLibrisReaderSDK iOS changelog
 
+### v1.5.0
+14/02/2023
+
+**Features**
+
+- [TC-3084] Allow injection of article audio feature
+- [TC-6526] Add config `articleReader.features.forceLayout` to force article reader layout for all articles
+- [TC-6526] Add config `articleReader.features.isImageCropEnabled` to disable image cropping in article content
+
+**Improvements**
+
+- [TC-6623] Change subtitle fallback when day of month is nil in miLibris datasource
+- [CIOS-1124] Fix layout of publication name when too long
+
 ### v1.4.0
 28/11/2023
 

@@ -76,11 +76,14 @@ The config for an instance of the article reader.
 | 4 | userInterface.scrollViewIndicatorStyle | UIScrollView.IndicatorStyle | default | The style of scroll bar indicators. |
 | 5 | articleImage | [ArticleImageConfig](#articleimageconfig) | | The config for the the article image viewer. |
 | 5 | features.debugImageCrop | Bool | false | Display rectangles on images previewing image crop. |
+| 5 | features.forceLayout | ArticleNativeContent.Layout? | nil | Force a specific article layout for all articles. |
+| 5 | features.isImageCropEnabled | Bool | true | Enable or disable image cropping in article content. |
 | 5 | features.onDeviceSmartCropEnabled | Bool | true | Enable on-device smart crop for images. |
 | 5 | colors.imagePlaceholder | UIColor | light: #F9F9F9 / dark: #536067 | The background color of image views when loading. |
 | 6 | colors.fisheyeLabelBackground | UIColor | #FFFFFF | The background color of the fisheye label. |
 | 6 | colors.fisheyeLabelText | UIColor | #15202B | The text color of the fisheye label. |
 | 6 | fonts.fisheyeLabel | FontInfo | System 12 | The font for the fisheye label. |
+| 7 | features.isAudioEnabled | Bool | false | Hide the audio button if disabled. |
 | 7 | colors.bottomBarBackground | UIColor | light: #F9F9F9 35% / dark: #1F1F1F 35% | The background color of the bottom bar. |
 | 7 | colors.bottomBarTint | UIColor | light: #15202B / dark: #FFFFFF | The color applied to controls on the bottom bar. |
 | 7 | fonts.bottomBar | FontInfo | System 12 | The font for the bottom bar text. |
