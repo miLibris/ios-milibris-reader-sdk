@@ -32,6 +32,7 @@ MiLibrisReaderSDK is the new miLibris reading SDK (previously called MLPDFReader
     * [Enable background mode for text-to-speech](#enable-background-mode-for-text-to-speech)
     * [Configure article search](#configure-article-search)
     * [Disable image crop in articles](#disable-image-crop-in-articles)
+    * [Customize article reader fonts](#customize-article-reader-fonts)
 
 ## Issues
 
