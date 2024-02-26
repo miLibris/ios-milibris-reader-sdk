@@ -683,3 +683,41 @@ class MyViewController: UIViewController {
 
 }
 ```
+
+### Customize article reader fonts
+
+You can quickly customize the article reader fonts to match your brand:
+
+```swift
+import MiLibrisReaderSDK
+
+class MyViewController: UIViewController {
+
+    func openReader() {
+        // [...]
+
+        // Set this before presenting the reader
+        try reader.config.articleReader.articleReader.applyPrimaryFont(
+            regularFontName: "PlayfairDisplay-Regular",
+            blackFontName: "PlayfairDisplay-Black",
+            boldFontName: "PlayfairDisplay-Bold"
+        )
+        try reader.config.articleReader.applySecondaryFont(
+            regularFontName: "ComicNeue-Regular",
+            mediumFontName: "ComicNeue-Light",
+            semiBoldFontName: "ComicNeue-Bold"
+        )
+        try reader.config.articleReader.applyTertiaryFont(
+            regularFontName: "RobotoCondensed-Regular",
+            blackFontName: "RobotoCondensed-Black",
+            boldFontName: "RobotoCondensed-ExtraBold",
+            italicFontName: "RobotoCondensed-Italic"
+        )
+
+        // [...]
+    }
+
+}
+```
+
+See the methods documentation in code for more info. In addition to this, you can also customize each UI component individually with the corresponding config properties.

@@ -1,5 +1,17 @@
 # MiLibrisReaderSDK iOS changelog
 
+### v1.6.0
+26/02/2023
+
+**Features**
+
+- [TC-3862] Replace article loading UI with skeleton+shimmer effect
+- [TC-6533] Add utility method to override article fonts
+
+**Improvements**
+
+- [TC-6709] Hide article capsule view when a PDF page is zoomed in
+
 ### v1.5.0
 14/02/2023
 
