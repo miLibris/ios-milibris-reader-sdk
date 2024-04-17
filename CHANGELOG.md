@@ -1,7 +1,18 @@
 # MiLibrisReaderSDK iOS changelog
 
+### v1.7.0
+17/04/2024
+
+**Features**
+
+- [TC-6857] Add privacy manifest
+
+**Improvements**
+
+- [TC-6826] Prevent user interaction during automatic page turn (PDF & articles); add optional config to also prevent interaction during manual page turn
+
 ### v1.6.0
-26/02/2023
+26/02/2024
 
 **Features**
 
@@ -13,7 +24,7 @@
 - [TC-6709] Hide article capsule view when a PDF page is zoomed in
 
 ### v1.5.0
-14/02/2023
+14/02/2024
 
 **Features**
 
