@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "MiLibrisReaderSDK"
-  spec.version      = "1.7.0"
+  spec.version      = "1.8.0"
 
   spec.summary      = "miLibris iOS Reader SDK"
   spec.description  = <<-DESC
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   spec.source = {
     :http => "https://github.com/miLibris/ios-milibris-reader-sdk/releases/download/v#{spec.version}/MiLibrisReaderSDK.xcframework.zip",
     :type => "zip",
-    :sha256 => '7d117adcfac94a308457628c1062b5340ffa4224a64866f9b9548659dec19a7c'
+    :sha256 => 'c6ee25f1188f49428d27d52887dc466c812241a99c598226cd6af23df53e4ca9'
   }
 
   spec.vendored_frameworks = 'MiLibrisReaderSDK.xcframework'

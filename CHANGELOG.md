@@ -1,5 +1,13 @@
 # MiLibrisReaderSDK iOS changelog
 
+### v1.8.0
+03/05/2024
+
+**Features**
+
+- [TC-6217] Improve multimedia boxes visibility
+- [TC-6768] Add new delayed event for page read
+
 ### v1.7.0
 17/04/2024
 
