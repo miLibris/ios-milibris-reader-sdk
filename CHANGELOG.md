@@ -1,5 +1,12 @@
 # MiLibrisReaderSDK iOS changelog
 
+### v1.9.0
+27/06/2024
+
+**Features**
+
+- [TC-6833] See back cover ad when opening an edition
+
 ### v1.8.0
 03/05/2024
 
