@@ -15,6 +15,7 @@ MiLibrisReaderSDK is the new miLibris reading SDK (previously called MLPDFReader
     * [Migrating from MLPDFReaderSDK v1](#migrating-from-mlpdfreadersdk-v1)
 * [Implementation](#implementation)
     * [Usual workflow](#usual-workflow)
+    * [Download a complete archive](#download-a-complete-archive)
     * [Extract a complete archive](#extract-a-complete-archive)
     * [Open the reader](#open-the-reader)
 * [Optional features](#optional-features)
@@ -160,6 +161,14 @@ In order to read content with the SDK, your application will likely implement th
 - Download a complete archive (with the *.complete extension) from the miLibris platform
 - Extract the archive to a directory in the app storage
 - Open the reader to read the unpacked content
+
+### Download a complete archive
+
+Refer to the miLibris API documentation to obtain a ticket for the issue you want to download, in the `x-ml-pdf` format.
+
+You can then download the complete archive with the following URL: `https://content.milibris.com/access/%@/download.complete` (replace `%@` with the mid of your ticket).
+
+The JWT token returned by the API can be ignored.
 
 ### Extract a complete archive
 
