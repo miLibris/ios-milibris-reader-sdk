@@ -1,5 +1,17 @@
 # MiLibrisReaderSDK iOS changelog
 
+### v1.10.0
+16/09/2024
+
+**Features**
+
+- [TC-6922] Update tutorial to optionally include long press
+- [TC-5458] Improve landscape mode on phones (the reader will now support landscape even if the presenting screen does not)
+
+**Improvements**
+
+- [TC-7103] Fix math error in articles interactive dismissal
+
 ### v1.9.0
 27/06/2024
 
