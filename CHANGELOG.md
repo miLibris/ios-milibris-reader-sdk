@@ -1,5 +1,19 @@
 # MiLibrisReaderSDK iOS changelog
 
+### v1.11.1
+06/02/2025
+
+**Improvements**
+
+- [TC-7277] Delay C4 timer if page is not loaded
+
+### v1.11.0
+31/10/2024
+
+**Features**
+
+- Allow override of the API v4 base URL via app's Info.plist
+
 ### v1.10.0
 16/09/2024
 
